@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="theme-color" content="#fff" />
+    <title>Elements</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- form css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- form css end -->
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Header Starts -->
+    <div id="header"></div>
+    <!-- Header Ends -->
+
+    <!-- Main Container Starts -->
+    <div class="main-container">
+
+
+        <!-- Form Elements starts -->
+        <div class="element-section">
+            <div class="container">
+
+                <div class="w100 element-head">
+                    <h2>Form Elements</h2>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Form Elements Ends -->
+
+        <!-- Form Elements starts -->
+        <div class="element-section">
+            <div class="container">
+                <form id="commentForm">
+                    <div class="f-row">
+                        <div class="w100 element-head">
+                            <h2>Form Elements</h2>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp">
+                                <input class="form-field" type="text" id="full-name" name="full-name" placeholder="First Name" required />
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp">
+                                <input class="form-field" type="email" id="email" name="email" placeholder="Last Name" required />
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp disabled-field">
+                                <input class="form-field" type="number" id="number" name="number" placeholder="Phone Number (Disabled Field)" disabled />
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp">
+                                <input class="form-field" type="number" id="phone-no" name="phone-no" placeholder="Phone Number" required />
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp">
+                                <input type="text" class="form-field datetimepicker-input" id="date1" name="date1"
+                                    autocomplete="off" required />
+                                <i class="icon-calender"></i>
+                                <p class="form-label">Date Picker</p>
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp">
+                                <input type="text" class="form-field field--not-empty datetimepicker-input" id="date2"
+                                    name="date2" value="8/15/1989" autocomplete="off" required />
+                                <i class="icon-calender"></i>
+                                <p class="form-label">Birth Date</p>
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp">
+                                <input type="text" class="form-field datetimepicker-input" id="time1" name="time1"
+                                    autocomplete="off" required>
+                                <i class="icon-clock"></i>
+                                <p class="form-label">Select Time</p>
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp">
+                                <input type="text" class="form-field field--not-empty datetimepicker-input" id="time2"
+                                    name="time2" value="02:01:01" autocomplete="off" required>
+                                <i class="icon-clock"></i>
+                                <p class="form-label">Prefilled Time</p>
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp form-grp-var">
+                                <input type="text" name="variance" class="form-field" required />
+                                <p class="form-label">Variance</p>
+                                <span class="var-chart">$</span>
+                            </div>
+                        </div>
+                        <div class="w50">
+                            <!-- start -->
+                            <div class="form-grp">
+                                <input class="form-field" type="password" id="info-password" name="info-password"
+                                    required />
+                                <p class="form-label">Password</p>
+                                <i class="view-pass ph-eye-slash"></i>
+                            </div>
+                            <!-- end -->
+                        </div>
+                        <div class="w50">
+                            <!-- start -->
+                            <div class="form-grp">
+                                <input type="text" class="form-field" name="time1" required />
+                                <p class="form-label">How many days will you need to close on the property?</p>
+                            </div>
+                            <!-- end -->
+                        </div>
+                        <div class="w50">
+                            <div class="form-grp">
+                                <select class="select-field form-field" name="select-fld" id="select-fld" required>
+                                    <option></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+                                    <option>Option 5</option>
+                                </select>
+                                <p class="form-label">Normal Select Field</p>
+                            </div>
+                        </div>
+                        <div class="w100">
+                            <div class="form-textarea-group">
+                                <textarea type="text" class="form-field" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="w100 clearfix"></div>
+                        <div class="w33">
+                            <h3 class="ehdn2">Small Radio</h3>
+                            <div class="radio-box">
+                                <input type="radio" id="radio1" name="radio-small" />
+                                <label for="radio1">Radio 1</label>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio" id="radio2" name="radio-small" />
+                                <label for="radio2">Radio 2</label>
+                            </div>
+                        </div>
+                        <div class="w33">
+                            <h3 class="ehdn2">Small Checkbox Type 1</h3>
+                            <div class="checkbox-box">
+                                <input type="checkbox" id="checkbox1" name="checkbox1" required />
+                                <label class="chk-label" for="checkbox1">Checkbox 1</label>
+                            </div>
+                            <div class="checkbox-box">
+                                <input type="checkbox" id="checkbox2" name="checkbox2" required />
+                                <label class="chk-label" for="checkbox2">Checkbox 2</label>
+                            </div>
+                        </div>
+                        <div class="w33">
+                            <h3 class="ehdn2">Small Checkbox Type 2</h3>
+                            <div class="checkbox-box chk-rd">
+                                <input type="checkbox" id="checkbox21" name="checkbox1" required />
+                                <label class="chk-label" for="checkbox21">Checkbox round 1</label>
+                            </div>
+                            <div class="checkbox-box chk-rd">
+                                <input type="checkbox" id="checkbox22" name="checkbox2" required />
+                                <label class="chk-label" for="checkbox22">Checkbox round 2</label>
+                            </div>
+                        </div>
+                        <div class="w33">
+                            <h3 class="ehdn2">Checkbox Style 3</h3>
+                            <div class="checkbox-box check-three">
+                                <input type="checkbox" id="checkbox31" name="checkbox31" required />
+                                <label class="chk-label" for="checkbox31">
+                                    <i class="icon-profile"></i>
+                                    <span> Checkbox </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="w33">
+                            <h3 class="ehdn2">Checkbox Type 4</h3>
+                            <div class="checkbox-box chk-four">
+                                <input type="radio" id="checkbox41" name="radio-four" checked />
+                                <label class="chk-label" for="checkbox41">
+                                    <i class="icon-tick"></i>
+                                    <span>Checkbox round 1</span>
+                                </label>
+                            </div>
+                            <div class="checkbox-box chk-four chk-err">
+                                <input type="radio" id="checkbox42" name="radio-four" required />
+                                <label class="chk-label" for="checkbox42">
+                                    <i class="icon-cir-plus"></i>
+                                    <span>Checkbox round 2</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="w33">
+                            <h3 class="ehdn2">Checkbox Style 5</h3>
+                            <div class="checkbox-box check-five">
+                                <input type="checkbox" id="checkbox51" name="checkbox51" required />
+                                <label class="chk-label" for="checkbox51">
+                                    <span> Create an addendum to remove the contingency </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="w100">
+                            <button class="button button-line button--block" type="submit"><span>Submit</span></button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <!-- Form Elements Ends -->
+
+
+        <!-- Buttons starts -->
+        <div class="element-section">
+            <div class="container">
+                <div class="f-row">
+                    <div class="w100">
+                        <h2 class="ehdn1">Button Elements</h2>
+
+                        <div class="variable">
+                            <p>Button Variable Used</p>
+
+                            <span>
+                                --button-font </br>
+                                --button-fill </br>
+                                --button-line </br>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <!-- Filled Button Starts -->
+                    <div class="w50">
+                        <div class="row">
+                            <div class="w100">
+                                <h3 class="ehdn2">Filled Button</h3>
+                            </div>
+                            <div class="w100 mb-20">
+                                <button class="button">Normal Button</button>
+                            </div>
+                            <div class="w100">
+                                <button class="button button--block">Full Width Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Filled Button Ends -->
+                    <!-- Lined Button Starts -->
+                    <div class="w50">
+                        <div class="f-row">
+                            <div class="w100">
+                                <h3 class="ehdn2">Lined Button</h3>
+                            </div>
+                            <div class="w100 mb-20">
+                                <button class="button line">Normal Button</button>
+                            </div>
+                            <div class="w100">
+                                <button class="button line button--block">Full Width Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lined Button Ends -->
+                </div>
+            </div>
+        </div>
+        <!-- Buttons Ends -->
+        <!-- Other starts -->
+        <div class="element-section">
+            <div class="container">
+                <div class="f-row">
+                    <div class="w100">
+                        <h2 class="ehdn1">Other Elements</h2>
+                    </div>
+
+                    <div class="w50">
+                        <div class="f-row">
+                            <div class="w100">
+                                <h3 class="ehdn2">Icomoon</h3>
+                            </div>
+                            <div class="w100 mb-20">
+                                <a href="./icomoon/demo.html" class="button" target="_blank">Icon</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Tool tip Starts -->
+                    <div class="w50">
+                        <div class="row">
+                            <div class="w100">
+                                <h3 class="ehdn2">Tool tip</h3>
+                            </div>
+                            <div class="w100 mb-4">
+                                <span data-placement="top" role="tooltip" tooltip-title="top">
+                                    top
+                                </span>
+                                <span class="mr-3"></span>
+                                <span data-placement="right" role="tooltip" tooltip-title="right">
+                                    right
+                                </span>
+                                <span class="mr-3"></span>
+                                <span data-placement="bottom" role="tooltip" tooltip-title="bottom">
+                                    bottom
+                                </span>
+                                <span class="mr-3"></span>
+                                <span data-placement="left" role="tooltip" tooltip-title="left">
+                                    left
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tool tip Ends -->
+
+                    <!-- accordion Starts -->
+                    <div class="w50 acc-container">
+                        <div class="acc-item">
+                            <button class="accordion">Section 1</button>
+                            <div class="panel">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="accordion">Section 2</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="accordion">Section 3</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion Ends -->
+
+
+                    <!-- f-row Starts -->
+                    <div class="w100">
+                        <div class="row">
+                            <div class="w100">
+                                <h3 class="ehdn2">f-row &nbsp; f-5 &nbsp; f-1200-3 &nbsp; => &nbsp; f-col</h3>
+                            </div>
+                            <div class="w100 mb-4">
+                                <!-- Starts -->
+                                <div class="f-row f-5 f-1200-3 f-990-2 f-640-1">
+                                    <div class="f-col mb-1200-20"><span class="myElem">1</span></div>
+                                    <div class="f-col mb-1200-20"><span class="myElem">2</span></div>
+                                    <div class="f-col mb-1200-20"><span class="myElem">3</span></div>
+                                    <div class="f-col mb-1200-20"><span class="myElem">4</span></div>
+                                    <div class="f-col mb-1200-20"><span class="myElem">5</span></div>
+                                </div>
+                                <!-- Ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- f-row Ends -->
+                    <!-- Auto Width Starts -->
+                    <div class="w100">
+                        <div class="f-row">
+                            <div class="w100">
+                                <h3 class="ehdn2">Auto Width</h3>
+                            </div>
+                            <!-- Starts -->
+                            <div class="w50 w-1200-100 mb-1200-20">
+                                <span class="myElem">w50 >> w-1200-100 >>
+                                    mb-1200-20</span>
+                            </div>
+                            <div class="w30 w-1200-50 w-640-100 mb-640-20">
+                                <span class="myElem">w30 >> w-1200-50 >> w-640-100</span>
+                            </div>
+                            <div class="w20 w-1200-50 w-640-100">
+                                <span class="myElem">w20 >> w-1200-50 >> w-640-100</span>
+                            </div>
+                            <!-- Ends -->
+                        </div>
+                    </div>
+                    <!-- Auto Width Ends -->
+                </div>
+            </div>
+        </div>
+        <!-- Other Ends -->
+
+    </div>
+    <!-- Main Container Ends -->
+    <div style="height: 500px;"></div>
+    <!-- Footer Starts -->
+
+
+
+    <footer id="footer"></footer>
+    <!-- Footer Ends -->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/megamenu.js"></script>
+    <script src="js/common.js"></script>
+
+    <script>
+        var acc = document.querySelectorAll(".acc-item");
+
+        $(".acc-container .acc-item:first-child").addClass("active");
+        $(".acc-container .acc-item:nth-child(1) .panel").slideDown();
+
+        acc.forEach((el) =>
+            el.addEventListener("click", () => {
+                if (el.classList.contains("active")) {
+                    $(el).find(".panel").slideUp();
+                    $(el).removeClass("active");
+                } else {
+                    $(".panel").slideUp();
+                    $(".acc-item").removeClass("active");
+                    $(el).find(".panel").slideDown();
+                    $(el).addClass("active");
+                }
+            })
+        );
+    </script>
+
+</body>
+
+</html>
