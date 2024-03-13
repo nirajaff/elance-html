@@ -54,20 +54,20 @@ $(document).ready(function () {
             end: "0% 30%",
             onLeave: () => {
                 $(".play-btn").css({
-                    opacity: "0",
+                    opacity: "1",
                 });
-                // setTimeout(() => {
-                //     heroVideo.play();
-                // }, 500);
+                setTimeout(() => {
+                    heroVideo.play();
+                }, 500);
 
             },
             onEnterBack: () => {
                 $(".play-btn").css({
-                    opacity: "1",
+                    // opacity: "0",
                 });
-                // setTimeout(() => {
-                //     heroVideo.pause()
-                // }, 500);
+                setTimeout(() => {
+                    heroVideo.pause()
+                }, 500);
             },
             scrub: 1,
             preventOverlaps: true,
@@ -86,14 +86,20 @@ $(document).ready(function () {
         height: bannerVideoHeight,
         borderRadius: '24px',
         ease: "linear",
-    }).to('.play-btn', {
+    }, 0).to('.play-btn', {
         y: () =>
-            $(".video-wrap").offset().top - $(".banner-video").offset().top,
+            $(".video-wrap").offset().top - $(".banner-video").offset().top / 2,
         x: () =>
             ($(".video-wrap").offset().left - $(".banner-video").offset().left) / 2,
-        scale: 0.5
+        // scale: 0.5
 
     }, 0)
+
+    $('.play-btn').click(function () {
+        $(this).css('display', 'none')
+        $('.hero-right video').attr('controls', true)
+        $('.hero-right video').get(0).play()
+    })
 
     // trust swiper
     var trustSwiper = new Swiper(".trustSwiper", {
