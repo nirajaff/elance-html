@@ -1,60 +1,6 @@
 $(document).ready(function () {
 
-    // mm.add("(min-width: 1025px)", () => {
-
-    // solution section pinning
-    // var focusTl = gsap.timeline({
-    //     scrollTrigger: {
-    //         trigger: ".focus-height",
-    //         start: `0% 0%`,
-    //         end: `100% 100%`,
-    //         pin: ".focus-sticky",
-    //         scrub: true,
-    //         // markers: true
-    //     },
-    // });
-
-    // focus scroll animation
-    const focusTrigger = document.querySelectorAll(".focus-trigg");
-    focusTrigger.forEach((section, i) => {
-        // trigger point dynamic css
-        // $(".focus-" + (i + 1)).css({
-        //     top: i * 100 + "vh",
-        // });
-
-        var carStackGap = 100
-
-        // card stack gap
-        // gsap.to(".focus-card-" + (i + 1), {
-        //     top: i * 100 + "vh",
-        //     paddingTop: i * carStackGap + "px",
-        // });
-
-        // trigger swiper
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: section,
-                start: "0% 60%",
-                end: "0% 0%",
-                toggleActions: "play none none reverse",
-                scrub: 2,
-                // markers: true,
-                onEnter: () => leftSwiper(i),
-                onEnterBack: () => leftSwiperRev(i),
-            },
-        });
-
-        function leftSwiper() {
-            // solLeftSwiper.slideTo(i);
-        }
-
-        function leftSwiperRev() {
-            // solLeftSwiper.slideTo(i - 1);
-        }
-    });
-
-    // });
-
+    // magnific popup
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
@@ -65,6 +11,7 @@ $(document).ready(function () {
         fixedContentPos: false
     });
 
+    // you swiper
     var youSwiper = new Swiper(".youSwiper", {
         slidesPerView: 2.3,
         grabCursor: true,
@@ -89,6 +36,26 @@ $(document).ready(function () {
 
     });
 
+    // studentImgSwiper swiper
+    var studentImgSwiper = new Swiper(".studentImgSwiper", {
+        slidesPerView: 1,
+        speed: 1500,
+        // simulateTouch: false,
+        rotate: 0,
+        cardsEffect: {
+            perSlideRotate: "0",
+            perSlideOffset: "10",
+        },
+        loop: true,
+        effect: "cards",
+        grabCursor: true,
+        spaceBetween: 300,
+        navigation: {
+            nextEl: ".studentContentSwiper .swiper-next-button",
+            prevEl: ".studentContentSwiper .swiper-prev-button",
+        },
+    });
+
     // studentContentSwiper swiper
     var studentContentSwiper = new Swiper(".studentContentSwiper", {
         slidesPerView: 1,
@@ -96,28 +63,115 @@ $(document).ready(function () {
         spaceBetween: 300,
         // simulateTouch: false,
         navigation: {
-            nextEl: ".studentContentSwiper .swiper-next-button",
-            prevEl: ".studentContentSwiper .swiper-prev-button",
+            nextEl: ".student-left .swiper-next-button",
+            prevEl: ".student-left .swiper-prev-button",
         },
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        on: {
+            slideChange: function () {
+                i = this.realIndex;
+                // console.log(i);
+                studentImgSwiper.slideTo(i + 1);
+            },
+        }
     });
 
-    // studentImgSwiper swiper
-    var studentImgSwiper = new Swiper(".studentImgSwiper", {
-        slidesPerView: 1,
-        speed: 1500,
-        // simulateTouch: false,
-        spaceBetween: 300,
-        navigation: {
-            nextEl: ".studentContentSwiper .swiper-next-button",
-            prevEl: ".studentContentSwiper .swiper-prev-button",
+
+
+
+
+
+    // gsap initiate
+    gsap.registerPlugin(ScrollTrigger);
+
+    // GSAP onload
+    gsap.from(
+        ".hero-content", {
+        y: 100,
+        duration: 1.7,
+        autoAlpha: 0
+    }, 0);
+    gsap.from(
+        "#header",
+        {
+            y: '-100%',
+            duration: 1.5,
         },
-    });
+        0)
+    gsap.from(
+        ".header-list",
+        {
+            background: '#000',
+            duration: 1.5,
+        },
+        0)
+    gsap.from(
+        [".hero-card-1", ".hero-card-4"],
+        {
+            y: -500,
+            duration: 2,
+        },
+        1)
+    gsap.from(
+        ".hero-card-2",
+        {
+            y: -800,
+            x: 50,
+            duration: 2,
+        },
+        1)
+    gsap.from(
+        ".hero-card-5",
+        {
+            y: -800,
+            x: -50,
+            duration: 2,
+        },
+        1)
+    gsap.from(
+        ".hero-card-3",
+        {
+            y: -1200,
+            x: -60,
+            duration: 2,
+        },
+        1)
+    gsap.from(
+        ".hero-card-6",
+        {
+            y: -1200,
+            x: 60,
+            duration: 2,
+        },
+        1)
+    gsap.from(
+        ".hero-card-round",
+        {
+            background: '#000',
+            duration: 2,
+        },
+        1)
 
-    studentContentSwiper.controller.control = studentImgSwiper;
-    studentImgSwiper.controller.control = studentContentSwiper;
+    var fCards = document.querySelectorAll('.focus-card')
 
+    fCards.forEach((e, i) => {
+        $('.focus-card-' + (i + 1)).css('top', 100 + ((i + 1) * 30))
+    })
 
-
-
+    function moveImage(event, box) {
+        const img = box.querySelector('.pool-img');
+        const boxRect = box.getBoundingClientRect();
+        const offsetX = event.clientX - boxRect.left;
+        const offsetY = event.clientY - boxRect.top;
+        const centerX = boxRect.width / 2;
+        const centerY = boxRect.height / 2;
+        const moveX = (offsetX - centerX) * 0.1;
+        const moveY = (offsetY - centerY) * 0.1;
+        img.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    }
 
 })
