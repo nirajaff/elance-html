@@ -20,6 +20,18 @@ function fixedHeader() {
 }
 
 
+// =======================================================
+
+window.addEventListener("beforeunload", function () {
+    document.body.style.display = "none";
+    window.scrollTo(0, 0);
+});
+
+window.addEventListener("load", function () {
+    document.body.style.display = "block";
+});
+
+
 
 
 
@@ -205,3 +217,6 @@ $(document).on('click', '.view-pass', function () {
 // }
 // window.scrollTo(0, 0);
 // $('window').scrollTop(0);
+// window.onload = function () {
+//     lenis.scrollTo('#top', { offset: 100, duration: 4 })
+// }
