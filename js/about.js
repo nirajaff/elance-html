@@ -56,10 +56,6 @@ $(document).ready(function () {
             },
         }
     });
-
-
-
-
     // journey dynamic height
     $('.journey-content').height($('.journey-content').height() + 50)
 
@@ -154,4 +150,7 @@ $(document).ready(function () {
 
 
     }
+
+    var journeyPaddingLeft = window.innerWidth - $('.container').outerWidth();
+    $('.journey-sec').css('padding-left', journeyPaddingLeft / 2);
 })

@@ -1042,7 +1042,9 @@ button:focus {
   height: var(--input-height);
   font-size: var(--input-fs-main);
   border: 0;
-  border-bottom: 1px solid var(--input-border);
+  border: 1px solid #CED8DE;
+  border-radius: 30px;
+  padding: 0 30px;
   width: 100%;
   z-index: 2;
   position: relative;
@@ -1061,8 +1063,7 @@ button:focus {
 
 .form-field:focus,
 .form-field.field--not-empty {
-  border: 0;
-  border-bottom: 1px solid #000;
+  border: 1px solid #000;
 }
 
 .form-field~.form-label {
@@ -1091,6 +1092,7 @@ button:focus {
   line-height: 1.3;
   padding: 15px 16px;
   resize: none;
+  border-radius: 16px;
 }
 
 /* Password View */
@@ -1305,7 +1307,7 @@ button:focus {
 
 /* Select */
 .select-field {
-  background: url("../img/drop-down-arrow.svg") no-repeat ~"calc(100% - 20px)" center;
+  background: url("../img/up-point-thin.svg") no-repeat ~"calc(100% - 20px)" center;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2238,4 +2240,11 @@ label.error {
   font-weight: 600;
   line-height: 120%;
   margin-bottom: 60px;
+}
+
+.small-title {
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.8;
 }
