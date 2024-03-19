@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
 
+
+
     // course trigger scroll animation
     const courseTrigger = document.querySelectorAll(".sticky-left > div");
 
@@ -38,6 +40,7 @@ $(document).ready(function () {
     $('.learn-link li').click(function () {
         $('.learn-link li').removeClass('active')
         $(this).addClass('active')
+        document.querySelector('.menu-popup').classList.remove('active');
     })
 
     // Video Travel animation
@@ -47,53 +50,57 @@ $(document).ready(function () {
     var bannerVideoHeight = $(".video-wrap").height();
     var heroVideo = document.getElementById("hero-video")
 
-    let VideoTravelAnim = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".full-video-sec",
-            start: "0% 75%",
-            end: "0% 30%",
-            onLeave: () => {
-                $(".play-btn").css({
-                    opacity: "1",
-                });
-                setTimeout(() => {
-                    heroVideo.play();
-                }, 500);
+    mm.add("(min-width: 1024px)", () => {
 
+        let VideoTravelAnim = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".full-video-sec",
+                start: "0% 75%",
+                end: "0% 30%",
+                onLeave: () => {
+                    $(".play-btn").css({
+                        opacity: "1",
+                    });
+                    setTimeout(() => {
+                        heroVideo.play();
+                    }, 500);
+
+                },
+                onEnterBack: () => {
+                    $(".play-btn").css({
+                        // opacity: "0",
+                    });
+                    setTimeout(() => {
+                        heroVideo.pause()
+                    }, 500);
+                },
+                scrub: 1,
+                preventOverlaps: true,
+                yoyo: true,
+                // markers: true,
             },
-            onEnterBack: () => {
-                $(".play-btn").css({
-                    // opacity: "0",
-                });
-                setTimeout(() => {
-                    heroVideo.pause()
-                }, 500);
-            },
-            scrub: 1,
-            preventOverlaps: true,
-            yoyo: true,
-            // markers: true,
-        },
-    });
+        });
 
-    VideoTravelAnim.to(".banner-video video", {
-        y: () =>
-            $(".video-wrap").offset().top - $(".banner-video").offset().top,
-        x: () =>
-            $(".video-wrap").offset().left - $(".banner-video").offset().left,
+        VideoTravelAnim.to(".banner-video video", {
+            y: () =>
+                $(".video-wrap").offset().top - $(".banner-video").offset().top,
+            x: () =>
+                $(".video-wrap").offset().left - $(".banner-video").offset().left,
 
-        width: bannerVideoWidth,
-        height: bannerVideoHeight,
-        borderRadius: '24px',
-        ease: "linear",
-    }, 0).to('.play-btn', {
-        y: () =>
-            $(".video-wrap").offset().top - $(".banner-video").offset().top / 2,
-        x: () =>
-            ($(".video-wrap").offset().left - $(".banner-video").offset().left) / 2,
-        // scale: 0.5
+            width: bannerVideoWidth,
+            height: bannerVideoHeight,
+            borderRadius: '24px',
+            ease: "linear",
+        }, 0).to('.play-btn', {
+            y: () =>
+                $(".video-wrap").offset().top - $(".banner-video").offset().top / 2,
+            x: () =>
+                ($(".video-wrap").offset().left - $(".banner-video").offset().left) / 2,
+            // scale: 0.5
 
-    }, 0)
+        }, 0)
+
+    })
 
     $('.play-btn').click(function () {
         $(this).css('display', 'none')
@@ -104,18 +111,53 @@ $(document).ready(function () {
     // trust swiper
     var trustSwiper = new Swiper(".trustSwiper", {
         slidesPerView: 4,
-        spaceBetween: 40
-    });
+        spaceBetween: 40,
+        simulateTouch: false,
+        loop: true,
+        breakpoints: {
+            360: {
+                spaceBetween: 20,
+            },
 
+            1024: {
+                speed: 5000,
+                autoplay: {
+                    delay: 0,
+                },
+            },
+        },
+    });
     // media swiper
     var mediaSwiper = new Swiper(".mediaSwiper", {
-        slidesPerView: 6,
-        spaceBetween: 40,
+        // slidesPerView: 6,
+        // spaceBetween: 40,
         speed: 5000,
         simulateTouch: false,
         loop: true,
         autoplay: {
             delay: 0,
+        },
+        breakpoints: {
+            360: {
+                slidesPerView: 2.6,
+                spaceBetween: 40,
+            },
+            400: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            },
+            1200: {
+                slidesPerView: 6,
+                spaceBetween: 40,
+            },
         },
 
     });
@@ -142,9 +184,17 @@ $(document).ready(function () {
             })
         );
     }
-
     for (i = 1; i < 5; i++) {
         dynAcc(i);
     }
+
+    // mobile popup
+    document.querySelector('.fixed-menu').addEventListener('click', () => {
+        document.querySelector('.menu-popup').classList.toggle('active');
+    })
+
+    document.querySelector('.menu-popup .cross-icon').addEventListener('click', () => {
+        document.querySelector('.menu-popup').classList.remove('active');
+    })
 
 })

@@ -225,7 +225,7 @@ body {
 
   p {
     color: var(--black);
-    font-size: 24px;
+    font-size: var(--fs24);
     font-weight: 500;
     line-height: 130%;
   }
@@ -262,7 +262,7 @@ body {
 
 .hero-title {
   color: var(--black);
-  font-size: 72px;
+  font-size: var(--fs72);
   font-weight: 700;
   line-height: 120%;
   .m-width(518px);
@@ -321,6 +321,11 @@ body {
   justify-content: space-between;
   gap: 126px;
   position: relative;
+  .flex();
+
+  &.home {
+    height: calc(100vh - var(--header-height));
+  }
 }
 
 .video-wrap {
@@ -329,18 +334,31 @@ body {
   border-radius: 24px;
   overflow: hidden;
   .cover();
+
+  video {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .play-btn {
+    display: none;
+  }
+
+
 }
 
 .chart-title {
   color: var(--black);
-  font-size: 60px;
+  font-size: var(--fs60);
   line-height: 130%;
   .m-width(716px);
   margin-bottom: 68px;
 
   span {
     color: #82929A;
-    font-size: 60px;
+    font-size: var(--fs60);
   }
 }
 
@@ -363,11 +381,13 @@ body {
 .learn-img {
   width: 100px;
   height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
 }
 
 .learn-title {
   color: #1A1A16;
-  font-size: 24px;
+  font-size: var(--fs24);
   font-weight: 600;
   line-height: 120%;
   flex: 1;
@@ -382,7 +402,6 @@ body {
 }
 
 .learn-card {
-  width: 444px;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.90);
   box-shadow: 0px 16px 44px 0px rgba(155, 155, 155, 0.10);
@@ -390,6 +409,13 @@ body {
   padding: 34px 28px 36px 38px;
   position: sticky;
   top: 100px;
+  margin-bottom: 30px;
+
+  .cross-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .learn-link {
@@ -443,7 +469,7 @@ body {
 .faculty-title {
   font-family: "Inter", sans-serif;
   color: #FFF;
-  font-size: 24px;
+  font-size: var(--fs24);
   font-weight: 500;
   line-height: 130%;
   text-transform: capitalize;
@@ -455,11 +481,11 @@ body {
   font-size: 36px;
   line-height: 120%;
   margin-bottom: 12px;
-  width: 426px;
+  .m-width(426px);
 
 
   span {
-    font-size: 60px;
+    font-size: var(--fs60);
     font-weight: 600;
     color: #FFF;
     font-style: normal;
@@ -482,7 +508,8 @@ body {
 }
 
 .sticky-left {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
 
   .comm-section {
     padding-top: 100px;
@@ -490,7 +517,9 @@ body {
   }
 }
 
-// .sticky-right {}
+.sticky-right {
+  width: 444px;
+}
 
 .faculty-top {
   display: flex;
@@ -528,7 +557,8 @@ body {
 
 .process-card-title {
   color: var(--black);
-  font-size: 30px;
+  font-size: var(--fs30);
+  ;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: -0.9px;
@@ -579,7 +609,7 @@ body {
   p {
     color: var(--black);
     font-family: Inter;
-    font-size: 24px;
+    font-size: var(--fs24);
     line-height: 160%;
     margin-bottom: 26px;
   }
@@ -608,6 +638,7 @@ body {
   font-weight: 600;
   line-height: 160%;
   letter-spacing: -0.54px;
+  flex: 1;
 
   span {
     color: var(--black);
@@ -683,7 +714,7 @@ body {
   h2 {
     color: #FFF;
     text-align: center;
-    font-size: 72px;
+    font-size: var(--fs72);
     font-weight: 600;
     line-height: 130%;
     margin-bottom: 34px;
@@ -713,6 +744,10 @@ body {
 .dream-wrap {
   .f-row {
     gap: 30px 0;
+  }
+
+  .acc-container {
+    margin-bottom: 40px;
   }
 }
 
@@ -747,7 +782,7 @@ body {
   h4 {
     width: 20%;
     color: #1C1C37;
-    font-size: 24px;
+    font-size: var(--fs24);
     font-weight: 500;
     line-height: 120%;
     letter-spacing: -0.72px;
@@ -757,7 +792,7 @@ body {
 
   p {
     color: var(--black);
-    font-size: 60px;
+    font-size: var(--fs60);
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -1.8px;
@@ -898,7 +933,7 @@ body {
 
 .you-title {
   color: #000;
-  font-size: 24px;
+  font-size: var(--fs24);
   font-weight: 500;
   line-height: 130%;
   margin-bottom: 22px;
@@ -1059,7 +1094,7 @@ body {
   h3 {
     color: var(--black);
     font-family: Outfit;
-    font-size: 24px;
+    font-size: var(--fs24);
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
@@ -1184,7 +1219,7 @@ body {
 
   h1 {
     color: var(--black);
-    font-size: 72px;
+    font-size: var(--fs72);
     font-weight: 700;
     line-height: 120%;
 
@@ -1215,11 +1250,7 @@ body {
   }
 }
 
-.hero-wrap {
-  .flex();
-  height: calc(100vh - var(--header-height));
 
-}
 
 .img-box {
   position: absolute;
@@ -1348,7 +1379,7 @@ body {
 
   span {
     color: #1A1A16;
-    font-size: 24px;
+    font-size: var(--fs24);
     font-weight: 600;
   }
 }
@@ -1569,7 +1600,8 @@ body {
 
 .journey-title {
   color: var(--black);
-  font-size: 30px;
+  font-size: var(--fs30);
+  ;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: -0.9px;
@@ -1747,7 +1779,7 @@ body {
   h1 {
     color: var(--black);
     text-align: center;
-    font-size: 72px;
+    font-size: var(--fs72);
     font-weight: 700;
     line-height: 120%;
     margin-bottom: 16px;
@@ -2074,7 +2106,7 @@ body {
 
   h4 {
     color: var(--black);
-    font-size: 24px;
+    font-size: var(--fs24);
     font-weight: 600;
     line-height: 130%;
     letter-spacing: -0.72px;
@@ -2155,7 +2187,7 @@ body {
   flex-direction: column;
   color: var();
   text-align: center;
-  font-size: 24px;
+  font-size: var(--fs24);
   font-weight: 600;
   line-height: 130%;
   letter-spacing: -0.72px;
@@ -2172,7 +2204,7 @@ body {
   margin-bottom: 8px;
   color: #1A1A16;
   text-align: center;
-  font-size: 24px;
+  font-size: var(--fs24);
   font-weight: 600;
   line-height: 130%;
   letter-spacing: -0.72px;
@@ -2180,7 +2212,7 @@ body {
   color: #1A1A16;
   text-align: center;
   font-family: Outfit;
-  font-size: 24px;
+  font-size: var(--fs24);
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
@@ -2314,7 +2346,8 @@ label {
   position: relative;
 
   &::after {
-    content: url('../img/imp-top.png');
+    content: '';
+    background: url('../img/imp-top.png');
     background-size: cover;
     height: 510px;
     width: 100%;
@@ -2324,12 +2357,333 @@ label {
   }
 
   &::before {
-    content: url('../img/imp-btm.png');
+    content: '';
+    background: url('../img/imp-btm.png');
     background-size: cover;
     height: 320px;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+}
+
+.impact-img-box {
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.impact-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9;
+  animation: ripple 4s linear infinite;
+}
+
+.impact-1 {
+  left: 340px;
+  top: 70px;
+}
+
+.impact-2 {
+  left: 140px;
+  top: 200px;
+}
+
+.impact-3 {
+  left: 140px;
+  top: 400px;
+}
+
+.impact-4 {
+  left: 340px;
+  top: 500px;
+}
+
+.impact-5 {
+  right: 340px;
+  top: 70px;
+}
+
+.impact-6 {
+  right: 140px;
+  top: 200px;
+}
+
+.impact-7 {
+  right: 140px;
+  top: 400px;
+}
+
+.impact-8 {
+  right: 340px;
+  top: 500px;
+}
+
+@keyframes ripple {
+  0% {
+    scale: 1;
+  }
+
+  25% {
+    scale: 1.2;
+  }
+
+  50% {
+    scale: 1;
+  }
+
+  75% {
+    scale: 0.8;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.small-height {
+  padding-bottom: 0;
+
+  .page-header {
+    padding-bottom: 60px;
+  }
+}
+
+.blog-banner-wrap {
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  .cover();
+}
+
+.blog-bnr-content {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  .m-width(512px);
+
+  h2 {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1.08px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    line-height: 200%;
+  }
+}
+
+.blog-top-row {
+  .flex(space-between);
+}
+
+.search-wrap {
+  position: relative;
+  width: 400px;
+
+  img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+  }
+
+  .form-field {
+    padding: 0 50px;
+  }
+}
+
+.blog-img {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 16px;
+  .cover();
+}
+
+
+.blog-card {
+  h3 {
+    color: var(--black);
+    font-size: var(--fs24);
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.72px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #82929A;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+  }
+}
+
+.pagination-wrap {
+  .flex();
+  margin: 40px 0;
+
+  ul {
+    display: flex;
+    gap: 24px;
+  }
+
+  li {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid #BDBDBD;
+    .flex();
+
+    a {
+      color: #999;
+      font-size: 16px;
+      line-height: normal;
+    }
+
+    &.active {
+      background: #3E78CA;
+      border: 1px solid #3E78CA;
+
+      a {
+        color: #FFF;
+      }
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:first-child,
+    &:last-child {
+      border: 1px solid #000;
+    }
+  }
+}
+
+.prev-blog-pg {
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.update-card {
+  .flex();
+  flex-direction: column;
+  border-radius: 24px;
+  border: 1px solid #A3C6D8;
+  padding: 65px;
+  gap: 25px;
+
+  h3 {
+    color: var(--black);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  span {
+    color: #3E78CA;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+    display: block;
+  }
+}
+
+.email-wrap {
+  width: 500px;
+
+  .button {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.blog-tab-sec {
+  .f-row {
+    gap: 30px 0;
+  }
+}
+
+.trust-img-wrap {
+  .trust-right {
+    display: none;
+    flex: 1;
+  }
+}
+
+.fixed-wrap {
+  .flex(space-between);
+  gap: 16px;
+
+  .button {
+    height: 52px;
+  }
+}
+
+.fixed-bar {
+  display: none;
+  background: #FFF;
+  padding: 10px;
+  position: sticky;
+  top: 85%;
+  z-index: 11;
+
+}
+
+.fixed-menu {
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.menu-popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100dvh;
+  background: #00000090;
+  padding-top: 100px;
+  z-index: 12999;
+  .anim(0.6s);
+  transform: translate(0%, 100%);
+
+  &.active {
+    transform: none;
+  }
+
+  .learn-card {
+    padding-top: 60px;
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .learn-link li {
+    margin-bottom: 26px;
   }
 }

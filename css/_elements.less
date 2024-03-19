@@ -57,6 +57,11 @@ img {
   --input-error: #ff2323;
   /* input end */
 
+  --fs72: 72px;
+  --fs60: 60px;
+  --fs30: 20px;
+  --fs24: 24px;
+
   /* button */
   --button-font: 700;
   --button-fill: #519FDE;
@@ -597,6 +602,21 @@ p {
   .customMargin(mb-640-; 21);
 }
 
+@media all and (max-width: 576px) {
+  .grid(f-576; 10);
+  .customWidth(w-576-; 20);
+
+  .w-576-33 {
+    width: 33%;
+  }
+
+  .w-576-16 {
+    width: 16.666666%;
+  }
+
+  .customMargin(mb-576-; 21);
+}
+
 @media all and (max-width: 480px) {
   .grid(f-480; 10);
   .customWidth(w-480-; 20);
@@ -918,6 +938,7 @@ hr {
   border-radius: 50px;
   font-size: 16px;
   text-align: center;
+  white-space: nowrap;
   .anim();
 
   &:hover {
@@ -2145,7 +2166,8 @@ label.error {
   transition: 0.4s;
 
   color: var(--black);
-  font-size: 30px;
+  font-size: var(--fs30);
+  ;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: -0.9px;
@@ -2236,7 +2258,7 @@ label.error {
 .sec-title {
   color: var(--black);
   font-family: Outfit;
-  font-size: 60px;
+  font-size: var(--fs60);
   font-weight: 600;
   line-height: 120%;
   margin-bottom: 60px;
@@ -2244,7 +2266,7 @@ label.error {
 
 .small-title {
   color: var(--black);
-  font-size: 24px;
+  font-size: var(--fs24);
   font-weight: 500;
   line-height: 1.8;
 }
