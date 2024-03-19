@@ -25,13 +25,35 @@ $(document).ready(function () {
 
     // media swiper
     var mediaSwiper = new Swiper(".mediaSwiper", {
-        slidesPerView: 6,
-        spaceBetween: 40,
+        // slidesPerView: 6,
+        // spaceBetween: 40,
         speed: 5000,
         simulateTouch: false,
         loop: true,
         autoplay: {
             delay: 0,
+        },
+        breakpoints: {
+            360: {
+                slidesPerView: 2.6,
+                spaceBetween: 40,
+            },
+            400: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            },
+            1200: {
+                slidesPerView: 6,
+                spaceBetween: 40,
+            },
         },
 
     });

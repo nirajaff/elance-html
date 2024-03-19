@@ -425,7 +425,7 @@ body {
 
   a {
     color: #82929A;
-    font-size: 18px;
+    font-size: var(--fs18);
     line-height: 120%;
     position: relative;
   }
@@ -580,7 +580,7 @@ body {
 
 .expert-name {
   color: var(--black);
-  font-size: 18px;
+  font-size: var(--fs18);
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.54px;
@@ -634,7 +634,7 @@ body {
 
 .feedback-person {
   color: var(--black);
-  font-size: 18px;
+  font-size: var(--fs18);
   font-weight: 600;
   line-height: 160%;
   letter-spacing: -0.54px;
@@ -642,7 +642,7 @@ body {
 
   span {
     color: var(--black);
-    font-size: 18px;
+    font-size: var(--fs18);
     font-weight: 400;
     line-height: 160%;
     letter-spacing: -0.54px;
@@ -848,7 +848,7 @@ body {
 }
 
 .home-sec-title {
-  width: 396px;
+  .m-width(396px);
 
   &.sec-title {
     margin-bottom: 36px;
@@ -978,6 +978,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   // overflow: hidden;
+  flex: 1;
+  min-width: 0;
 
   .swiper-button-wrap {
     display: flex;
@@ -1039,10 +1041,10 @@ body {
   position: absolute;
   left: 48px;
   bottom: 20px;
+  padding-right: 70px;
 
   .comm-para {
     margin-bottom: 18px;
-    padding-right: 70px;
   }
 }
 
@@ -1059,7 +1061,7 @@ body {
   gap: 24px;
 
   h4 {
-    font-size: 18px;
+    font-size: var(--fs18);
     font-style: normal;
     font-weight: 600;
     line-height: 160%;
@@ -1127,6 +1129,8 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  width: 455px;
+  height: 398px;
 }
 
 .student-wrap {
@@ -1938,7 +1942,7 @@ body {
   p {
     color: #FFF;
     font-family: Inter;
-    font-size: 18px;
+    font-size: var(--fs18);
     font-weight: 400;
     line-height: 200%;
   }
@@ -2071,7 +2075,7 @@ body {
 
     a {
       color: #82929A;
-      font-size: 18px;
+      font-size: var(--fs18);
       font-weight: 500;
       line-height: 120%;
       letter-spacing: -0.54px;
@@ -2121,7 +2125,7 @@ body {
     li {
       color: var(--black);
       font-family: Inter;
-      font-size: 18px;
+      font-size: var(--fs18);
       line-height: 200%;
       position: relative;
 
@@ -2284,7 +2288,7 @@ body {
   li {
     color: #444;
     font-family: Inter;
-    font-size: 18px;
+    font-size: var(--fs18);
     font-weight: 400;
     line-height: 200%;
     position: relative;
@@ -2315,7 +2319,7 @@ body {
 
 label {
   color: var(--black);
-  font-size: 18px;
+  font-size: var(--fs18);
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -0.54px;
@@ -2462,6 +2466,7 @@ label {
   overflow: hidden;
   position: relative;
   .cover();
+  margin-bottom: 30px;
 }
 
 .blog-bnr-content {
@@ -2531,7 +2536,7 @@ label {
   p {
     color: #82929A;
     font-family: Inter;
-    font-size: 18px;
+    font-size: var(--fs18);
     font-weight: 400;
     line-height: 200%;
   }
@@ -2685,5 +2690,14 @@ label {
 
   .learn-link li {
     margin-bottom: 26px;
+  }
+}
+
+.social-share-icon {
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
   }
 }
