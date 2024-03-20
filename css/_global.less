@@ -478,7 +478,7 @@ body {
 
 .faculty-name {
   color: #FFF;
-  font-size: 36px;
+  font-size: var(--fs36);
   line-height: 120%;
   margin-bottom: 12px;
   .m-width(426px);
@@ -531,7 +531,7 @@ body {
 .faculty-profile {
   p {
     color: #FFF;
-    font-size: 22px;
+    font-size: var(--fs22);
     line-height: 160%;
     font-family: "Inter", sans-serif;
   }
@@ -685,7 +685,7 @@ body {
   h2 {
     color: var(--black);
     text-align: center;
-    font-size: 36px;
+    font-size: var(--fs36);
     font-weight: 700;
     line-height: 120%;
     margin-bottom: 50px;
@@ -980,17 +980,22 @@ body {
   // overflow: hidden;
   flex: 1;
   min-width: 0;
+  gap: 40px;
 
   .swiper-button-wrap {
     display: flex;
     gap: 16px;
+  }
+
+  .home-sec-title.sec-title {
+    margin-bottom: 0;
   }
 }
 
 .student-detail {
   h3 {
     color: var(--black);
-    font-size: 36px;
+    font-size: var(--fs36);
     font-weight: 500;
     line-height: 120%;
     letter-spacing: -1.08px;
@@ -1007,7 +1012,7 @@ body {
 
 .student-content-swiper {
   margin: unset;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1168,7 +1173,7 @@ body {
 
   h3 {
     color: var(--black);
-    font-size: 36px;
+    font-size: var(--fs36);
     font-weight: 600;
     line-height: 120%;
     letter-spacing: -1.08px;
@@ -1178,7 +1183,7 @@ body {
   p {
     color: #444;
     font-family: Inter;
-    font-size: 22px;
+    font-size: var(--fs22);
     font-weight: 400;
     line-height: 200%;
     margin-bottom: 48px;
@@ -1204,7 +1209,7 @@ body {
 }
 
 .student-right {
-  // width: 50%;
+  .m-width(518px);
 
   .swiper-slide {
     background: #FFF;
@@ -1480,16 +1485,13 @@ body {
   }
 }
 
-.student-right {
-  width: 518px;
-}
 
 .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  font-size: 22px;
+  font-size: var(--fs22);
   font-weight: bold;
 }
 
@@ -1510,7 +1512,7 @@ body {
 
 .hero-height {
   position: relative;
-  height: calc(350vh - (var(--header-height)) * 4);
+  height: calc(500vh - (var(--header-height)) * 4);
 }
 
 .hero-trigg {
@@ -1809,7 +1811,7 @@ body {
 
   h3 {
     color: var(--black);
-    font-size: 36px;
+    font-size: var(--fs36);
     font-weight: 600;
     line-height: 120%;
     letter-spacing: -1.08px;
@@ -1932,7 +1934,7 @@ body {
 
   h3 {
     color: #FFF;
-    font-size: 36px;
+    font-size: var(--fs36);
     font-weight: 600;
     line-height: 120%;
     letter-spacing: -1.08px;
@@ -2477,7 +2479,7 @@ label {
 
   h2 {
     color: #FFF;
-    font-size: 36px;
+    font-size: var(--fs36);
     font-weight: 600;
     line-height: 130%;
     letter-spacing: -1.08px;
@@ -2487,7 +2489,7 @@ label {
   p {
     color: #FFF;
     font-family: Inter;
-    font-size: 22px;
+    font-size: var(--fs22);
     line-height: 200%;
   }
 }
@@ -2610,7 +2612,7 @@ label {
   span {
     color: #3E78CA;
     text-align: center;
-    font-size: 36px;
+    font-size: var(--fs36);
     font-weight: 500;
     line-height: 120%;
     display: block;

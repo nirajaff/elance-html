@@ -40,13 +40,15 @@
 
 
         <!-- hero -->
-        <!-- <div class="comm-sectionn rel">
+        <div class="comm-sectionn rel">
 
             <div class="container">
                 <div class="hero-height">
                     <div class="hero-trigg hero-1"></div>
                     <div class="hero-trigg hero-2"></div>
                     <div class="hero-trigg hero-3"></div>
+                    <div class="hero-trigg hero-4"></div>
+                    <div class="hero-trigg hero-5"></div>
                     <div class="hero-sticky">
                         <div class="hero-wrap home">
                             <div class="hero-content">
@@ -137,8 +139,8 @@
                                 <h2>Focus on your Skills not the Scores.</h2>
                                 <a href="#" class="button">Schedule a Call</a>
                                 <div class="f-banner-card-wrap">
-                                    <div class="f-banner-card blur invisible"></div>
-                                    <div class="f-banner-card">
+                                    <div class="f-banner-card blur invisible f-b-c-1blur"></div>
+                                    <div class="f-banner-card f-b-c-2">
                                         <div class="f-card-left">
                                             <h4>02<span>Perform</span></h4>
                                         </div>
@@ -146,8 +148,8 @@
                                             <img src="img/fb2.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="f-banner-card blur"></div>
-                                    <div class="f-banner-card">
+                                    <div class="f-banner-card blur f-b-c-2blur"></div>
+                                    <div class="f-banner-card f-b-c-1">
                                         <div class="f-card-left">
                                             <h4>01<span>Learn</span></h4>
                                         </div>
@@ -155,8 +157,8 @@
                                             <img src="img/fb1.png" alt="">
                                         </div>
                                     </div>
-                                    <div class="f-banner-card blur"></div>
-                                    <div class="f-banner-card">
+                                    <div class="f-banner-card blur f-b-c-3blur"></div>
+                                    <div class="f-banner-card f-b-c-3">
                                         <div class="f-card-left">
                                             <h4>03<span>Get a Job</span></h4>
                                         </div>
@@ -171,11 +173,11 @@
                 </div>
             </div>
 
-        </div> -->
+        </div>
         <!-- hero end -->
 
         <!-- focus card -->
-        <!-- <div class="comm-section">
+        <div class="comm-section">
             <div class="container">
                 <div class="focus-wrap">
                     <div class="focus-card focus-card-0">
@@ -233,11 +235,11 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- focus card end -->
 
         <!-- pool -->
-        <!-- <div class="comm-section">
+        <div class="comm-section">
             <div class="container">
                 <div class="pool-wrap">
                     <h2 class="sec-title home-sec-title">Elance expert faculty pool</h2>
@@ -272,7 +274,7 @@
                             </div>
                         </div>
 
-                        <div class="pool-box">
+                        <div class="pool-box" onmousemove="moveImage(event, this)">
                             <div class="pool-row">
                                 <div class="pool-content">
                                     <h4>Qualification</h4>
@@ -284,7 +286,7 @@
                             </div>
                         </div>
 
-                        <div class="pool-box">
+                        <div class="pool-box" onmousemove="moveImage(event, this)">
                             <div class="pool-row">
                                 <div class="pool-content">
                                     <h4>Qualification</h4>
@@ -296,7 +298,7 @@
                             </div>
                         </div>
 
-                        <div class="pool-box">
+                        <div class="pool-box" onmousemove="moveImage(event, this)">
                             <div class="pool-row">
                                 <div class="pool-content">
                                     <h4>Qualification</h4>
@@ -311,7 +313,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- pool end-->
 
         <!-- you -->
@@ -420,7 +422,7 @@
         <!-- you end -->
 
         <!-- student  -->
-        <!-- <div class="comm-section big-sec ">
+        <div class="comm-section big-sec ">
             <div class="container">
                 <div class="student-wrap">
                     <div class="student-left">
@@ -501,11 +503,11 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- student  end-->
 
         <!-- career -->
-        <!-- <div class="comm-section big-sec">
+        <div class="comm-section big-sec">
             <div class="container">
                 <div class="career-wrap">
                     <div class="career-left">
@@ -556,11 +558,11 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- career end -->
 
         <!-- media -->
-        <!-- <div class="comm-section">
+        <div class="comm-section">
             <div class="container">
                 <div class="media-wrap">
                     <h2>Media Mentions</h2>
@@ -630,11 +632,11 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- media end -->
 
         <!-- ready -->
-        <!-- <div class="comm-section">
+        <div class="comm-section">
             <div class="container">
                 <div class="ready-wrap">
                     <div class="ready-img">
@@ -657,7 +659,7 @@
 
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- ready end -->
 
     </main>
@@ -682,19 +684,22 @@
 
     <script src="js/megamenu.js"></script>
     <script src="js/common.js"></script>
-    <!-- <script src="js/index.js"></script> -->
+    <script src="js/index.js"></script>
     <script>
         // JavaScript function to move the pool-img element as per cursor position
-        function moveImage(event, box) {
-            const img = box.querySelector('.pool-img');
-            const boxRect = box.getBoundingClientRect();
-            const offsetX = event.clientX - boxRect.left;
-            const offsetY = event.clientY - boxRect.top;
-            const centerX = boxRect.width / 2;
-            const centerY = boxRect.height / 2;
-            const moveX = (offsetX - centerX) * 0.1;
-            const moveY = (offsetY - centerY) * 0.8;
-            img.style.transform = `translate(${moveX}px, ${moveY}px) rotate(354deg)`;
+
+        if (window.matchMedia("(min-width: 1025px)").matches) {
+            function moveImage(event, box) {
+                const img = box.querySelector('.pool-img');
+                const boxRect = box.getBoundingClientRect();
+                const offsetX = event.clientX - boxRect.left;
+                const offsetY = event.clientY - boxRect.top;
+                const centerX = boxRect.width / 2;
+                const centerY = boxRect.height / 2;
+                const moveX = (offsetX - centerX) * 0.1;
+                const moveY = (offsetY - centerY) * 0.8;
+                img.style.transform = `translate(${moveX}px, ${moveY}px) rotate(354deg)`;
+            }
         }
     </script>
 </body>

@@ -20,6 +20,7 @@
 
 @media all and (max-width:1366px) {
     :root {
+        --fs72: 60px;
         --fs60: 46px;
     }
 
@@ -83,6 +84,71 @@
 
     .student-img {
         height: 500px;
+    }
+
+    .pool-content {
+        transform: translateY(10px);
+    }
+
+    .focus-img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .focus-card {
+        padding: 40px;
+        gap: 50px;
+    }
+
+    .focus-banner-wrap {
+        height: 100%;
+    }
+
+    .focus-banner-wrap {
+        padding-top: 50px;
+
+        h2 {
+            font-size: 70px;
+            max-width: 570px;
+        }
+    }
+
+    .hero-card-1 {
+        height: 240px;
+        width: 550px;
+    }
+
+    .hero-card-2,
+    .hero-card-3,
+    .hero-card-4,
+    .hero-card-6 {
+        height: 240px;
+        width: 250px;
+    }
+
+    .hero-card-5 {
+        width: 350px;
+        height: 500px;
+    }
+
+    .img-box {
+        height: 90%;
+    }
+
+    .f-banner-card-wrap {
+        padding-bottom: 30px;
+    }
+
+    .hero-card-2 {
+        transform: scale(0.5) translate3d(-80%, -130%, 0);
+    }
+
+    .hero-card-5 {
+        transform: scale(0.4) translate3d(100%, -30%, 0);
+    }
+
+    .hero-card-4 {
+        transform: scale(0.5) translate3d(240%, -100%, 0);
     }
 }
 
@@ -224,6 +290,63 @@
         margin-bottom: 30px;
         align-items: flex-start;
     }
+
+    .f-banner-card {
+        width: 220px;
+        height: 220px;
+        padding: 14px;
+    }
+
+    .focus-banner-wrap h2 {
+        font-size: 60px;
+        max-width: 470px;
+    }
+
+    .focus-banner-wrap {
+        padding-top: 50px;
+    }
+
+    .hero-card-2 {
+        transform: scale(0.5) translate3d(-40%, -130%, 0);
+    }
+
+    .hero-card-5 {
+        transform: scale(0.4) translate3d(60%, -30%, 0);
+        width: 290px;
+    }
+
+    .hero-card-6 {
+        transform: scale(0.5) translate3d(250%, 0%, 0);
+    }
+
+    .hero-card-1 {
+        width: 400px;
+    }
+
+    .hero-card-2,
+    .hero-card-3,
+    .hero-card-4,
+    .hero-card-6 {
+        width: 190px;
+    }
+
+    .triangle-wrap {
+        width: 80px;
+        height: 80px;
+        transform: rotate(196deg);
+    }
+
+    .triangle-line {
+        margin-bottom: -20px;
+    }
+
+    .you-wrap {
+        padding: 30px 0;
+    }
+
+    .media-wrap h2 {
+        margin-bottom: 30px;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -266,6 +389,164 @@
     .student-wrap {
         gap: 30px;
     }
+
+    .pool-content {
+        padding-top: 0;
+        transform: none;
+        flex-direction: column;
+        transition: none;
+        gap: 10px;
+    }
+
+    .pool-img {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        clip-path: none;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .pool-box {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+        width: 50%;
+
+        &:hover {
+            .pool-content {
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    .pool-row {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: none;
+    }
+
+    .pool-row-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home-sec-title {
+        max-width: 100%;
+
+        &.sec-title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .pool-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .f-card-right {
+        width: 130px;
+        height: 130px;
+    }
+
+    .hero-height {
+        height: auto;
+
+
+    }
+
+    .hero-content {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .hero-wrap {
+        flex-direction: column;
+
+        &.home {
+            height: auto;
+        }
+    }
+
+    .img-box,
+    .focus-banner-wrap {
+        position: relative;
+        height: 100%;
+    }
+
+    .focus-banner-wrap {
+
+        h2,
+        a {
+            position: relative;
+        }
+
+        &::before {
+            content: '';
+            width: 200%;
+            height: 700px;
+            background: linear-gradient(177deg, #3E78CA 2.28%, #FFF 97.09%);
+            z-index: -1;
+            display: block;
+            position: absolute;
+            left: -300px;
+            top: -40px;
+        }
+    }
+
+    .hero-content {
+        .flex();
+        flex-direction: column;
+        align-items: flex-start;
+        height: calc(100vh - var(--header-height));
+    }
+
+    .hero-card-1 {
+        transform: none;
+    }
+
+    .hero-card-2 {
+        transform: none;
+    }
+
+    .hero-card-3 {
+        transform: none;
+    }
+
+    .hero-card-4 {
+        transform: none;
+    }
+
+    .hero-card-5 {
+        transform: none;
+    }
+
+    .hero-card-6 {
+        transform: none;
+    }
+
+    .hero-card-1,
+    .hero-card-2,
+    .hero-card-3,
+    .hero-card-4,
+    .hero-card-5,
+    .hero-card-6 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-box {
+        margin-bottom: 60px;
+    }
+
+    .parent {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .f-banner-card-wrap {
+        padding-bottom: 0;
+    }
 }
 
 @media all and (max-width:990px) {
@@ -273,6 +554,7 @@
         --input-height: 45px;
         --fs72: 44px;
         --fs60: 40px;
+        --fs22: 18px;
         --fs18: 16px;
     }
 
@@ -319,6 +601,44 @@
         left: 30px;
         padding-right: 30px;
     }
+
+    .focus-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .focus-card {
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .focus-content p {
+        margin-bottom: 30px;
+    }
+
+    .f-banner-card {
+        width: 180px;
+        height: 160px;
+    }
+
+    .focus-banner-wrap h2 {
+        font-size: 50px;
+        max-width: 400px;
+        padding-top: 50px;
+    }
+
+    .f-banner-card-wrap {
+        gap: 30px;
+    }
+
+    .f-card-left h4 {
+        font-size: 38px;
+    }
+
+    .f-card-right {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -334,11 +654,82 @@
         width: 300px;
     }
 
+    .pool-img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .pool-box {
+        width: 49%;
+    }
+
+    .pool-row-wrap {
+        gap: 30px 0;
+        justify-content: space-between;
+    }
+
+    .pool-row {
+        margin-bottom: 0;
+    }
+
+    .focus-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .focus-content p {
+        line-height: 1.7;
+    }
+
+    .student-left {
+        width: 100%;
+    }
+
+    .student-wrap {
+        flex-direction: column;
+    }
+
+    .f-banner-card {
+        width: 170px;
+        height: 170px;
+    }
+
+    .focus-banner-wrap h2 {
+        font-size: 46px;
+        padding-top: 0;
+    }
+
+    .f-card-right {
+        width: 90px;
+        height: 90px;
+    }
+
+    .f-card-left {
+        h4 {
+            font-size: 38px;
+        }
+    }
+
+    .f-banner-card {
+        width: 160px;
+        height: 150px;
+    }
+
+    .focus-banner-wrap {
+        padding-bottom: 220px;
+    }
+
+    .focus-banner-wrap::before {
+        top: 0;
+    }
 }
 
 @media all and (max-width:640px) {
     :root {
         --fs60: 36px;
+        --fs36: 30px;
         --fs30: 26px;
     }
 
@@ -444,6 +835,46 @@
     .career-img {
         width: 70%;
     }
+
+    .focus-card {
+        flex-direction: column;
+        align-items: flex-start;
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .focus-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .f-banner-card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .f-card-right {
+        width: 80px;
+        height: 80px;
+    }
+
+    .f-card-left {
+        span {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+    }
+
+    .pool-img {
+        height: 400px;
+    }
+
+    .focus-wrap {
+        height: auto;
+    }
 }
 
 @media all and (max-width:576px) {
@@ -510,11 +941,31 @@
             margin-bottom: 10px;
         }
     }
+
+    .focus-banner-wrap h2 {
+        max-width: 100%;
+    }
+
+    .f-banner-card-wrap {
+        justify-content: space-between;
+        gap: 10px 0;
+    }
+
+    .f-banner-card {
+        width: 120px;
+        height: 120px;
+    }
+
+    .focus-banner-wrap h2 {
+        font-size: 32px;
+    }
 }
 
 @media all and (max-width:480px) {
     :root {
+        --fs72: 36px;
         --fs60: 32px;
+        --fs36: 28px;
         --fs30: 24px;
     }
 
@@ -678,6 +1129,109 @@
             }
         }
     }
+
+    .pool-box {
+        width: 100%;
+        border-bottom: 1px solid #A3C6D8;
+    }
+
+    .pool-img {
+        height: 400px;
+    }
+
+    .focus-card {
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .focus-img {
+        border-radius: 16px;
+    }
+
+    .f-banner-card-wrap {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .f-b-c-1 {
+        order: 1;
+    }
+
+    .f-b-c-1blur {
+        order: 2;
+    }
+
+    .f-b-c-2 {
+        order: 4;
+    }
+
+    .f-b-c-2blur {
+        order: 3;
+    }
+
+    .f-b-c-3 {
+        order: 5;
+    }
+
+    .f-b-c-3blur {
+        order: 6;
+    }
+
+    .f-banner-card {
+        width: 49%;
+        height: 200px;
+    }
+
+    .invisible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .focus-banner-wrap {
+
+        padding-bottom: 40px;
+
+        &::before {
+            height: 1300px;
+        }
+    }
+
+    .triangle-1::before,
+    .triangle-1::after,
+    .triangle-wrap,
+    .hero-triangle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero-triangle {
+        transform: translate(0px, 10px);
+    }
+
+    .triangle-line {
+        gap: 5px;
+    }
+
+    .triangle-1::before,
+    .triangle-1::after {
+        background: linear-gradient(8deg, #3e78ca 19.32%, #ffffff 83.98%);
+    }
+
+    .hero-content {
+
+        .comm-para {
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-bottom: 40px;
+        }
+    }
+
+    .triangle-line {
+        margin-bottom: -10px;
+    }
 }
 
 @media all and (max-width:400px) {
@@ -695,6 +1249,10 @@
 
     .trust-swiper {
         width: 320px;
+    }
+
+    .f-banner-card {
+        height: 150px;
     }
 }
 
