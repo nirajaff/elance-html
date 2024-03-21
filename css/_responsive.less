@@ -91,12 +91,12 @@
     }
 
     .focus-img {
-        width: 450px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
     }
 
     .focus-card {
-        padding: 40px;
+        padding: 30px;
         gap: 50px;
     }
 
@@ -149,6 +149,10 @@
 
     .hero-card-4 {
         transform: scale(0.5) translate3d(240%, -100%, 0);
+    }
+
+    .big-sec {
+        padding: 40px 0;
     }
 }
 
@@ -330,11 +334,19 @@
         width: 190px;
     }
 
+    .triangle-1::before,
+    .triangle-1::after,
+    .triangle-wrap,
+    .hero-triangle,
     .triangle-wrap {
         width: 80px;
         height: 80px;
+    }
+
+    .triangle-wrap {
         transform: rotate(196deg);
     }
+
 
     .triangle-line {
         margin-bottom: -20px;
@@ -347,6 +359,47 @@
     .media-wrap h2 {
         margin-bottom: 30px;
     }
+
+    .you-bg {
+        transform: translate(-50%, calc(-50% + 10px));
+    }
+
+    .journey-swiper {
+        width: 460px;
+    }
+
+    .journey-dot {
+        margin-right: 40px;
+    }
+
+    .journey-right {
+        height: 500px;
+        width: 50%;
+        // border-radius: 28px;
+        position: relative;
+    }
+
+    .journey-content {
+        .sec-title {
+            margin-bottom: 40px;
+        }
+    }
+
+    .value-card-wrap {
+        gap: 20px;
+    }
+
+    .value-right {
+
+        .value-card {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
 }
 
 @media all and (max-width:1024px) {
@@ -387,7 +440,7 @@
     }
 
     .student-wrap {
-        gap: 30px;
+        gap: 50px;
     }
 
     .pool-content {
@@ -547,6 +600,64 @@
     .f-banner-card-wrap {
         padding-bottom: 0;
     }
+
+    .mob-triangle {
+        display: block;
+        // background: red;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 400px;
+
+        .triangle-1::before,
+        .triangle-1::after,
+        .triangle-1,
+        .hero-triangle,
+        .triangle-wrap {
+            width: 600px;
+            height: 600px;
+        }
+
+        .triangle-wrap {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+    }
+
+    .play-btn {
+        width: 100px;
+        height: 100px;
+    }
+
+    .journey-wrap {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .journey-swiper {
+        position: absolute;
+        width: 420px;
+    }
+
+    .journey-content {
+        width: 90%;
+    }
+
+    .journey-right {
+        border-radius: 28px;
+    }
+
+    .journey-right {
+        width: 60%;
+    }
+
+    .value-right .comm-para {
+        max-width: 60%;
+    }
 }
 
 @media all and (max-width:990px) {
@@ -639,6 +750,71 @@
         width: 80px;
         height: 80px;
     }
+
+    .mob-triangle {
+
+        .triangle-1::before,
+        .triangle-1::after,
+        .triangle-1,
+        // .hero-triangle,
+        .triangle-wrap {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    .you-card {
+        padding: 30px;
+    }
+
+    .you-swiper {
+
+        .swiper-next-button {
+            transform: translateX(0%);
+        }
+
+        .swiper-prev-button {
+            transform: translateX(-0%);
+        }
+    }
+
+    .student-right,
+    .student-left {
+        max-width: 100%;
+    }
+
+    .student-wrap {
+        flex-direction: column;
+    }
+
+    .student-right {
+        position: relative;
+
+        .swiper-button-wrap {
+            top: 50%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
+    }
+
+    .student-img {
+        height: 400px;
+    }
+
+    .student-left {
+        .swiper-button-wrap {
+            display: none;
+        }
+    }
+
+    .you-swiper .swiper-button-wrap {
+        top: 35%;
+    }
+
 }
 
 @media all and (max-width:768px) {
@@ -723,6 +899,41 @@
 
     .focus-banner-wrap::before {
         top: 0;
+    }
+
+    .journey-right {
+        width: 80%;
+    }
+
+    .value-card {
+        // padding: 30px;
+    }
+
+    .value-card-wrap {
+        flex-direction: column;
+    }
+
+    .value-left {
+        width: 100%;
+
+        .comm-para {
+            width: 60%;
+        }
+
+        .value-img {
+            width: 320px;
+            height: auto;
+        }
+    }
+
+    .mission-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+
+        .comm-para {
+            width: 100%;
+        }
     }
 }
 
@@ -875,6 +1086,77 @@
     .focus-wrap {
         height: auto;
     }
+
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .div2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div1 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .div6 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div5 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .div4 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div3 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .hero-card-1,
+    .hero-card-2,
+    .hero-card-3,
+    .hero-card-4,
+    .hero-card-5,
+    .hero-card-6 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .you-swiper {
+
+        .you-title {
+            font-size: 16px;
+            padding: 8px 14px;
+        }
+    }
+
+    .you-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .swiper-button {
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+    }
+
+    .you-bg {
+        width: 80%;
+        height: auto;
+    }
+
+    .you-card {
+        padding: 20px;
+    }
+
+    .int-sec-title.sec-title {
+        margin-bottom: 30px;
+    }
 }
 
 @media all and (max-width:576px) {
@@ -958,6 +1240,86 @@
 
     .focus-banner-wrap h2 {
         font-size: 32px;
+    }
+
+    .focus-card {
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .focus-img {
+        border-radius: 16px;
+    }
+
+    .f-banner-card-wrap {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .f-b-c-1 {
+        order: 1;
+    }
+
+    .f-b-c-1blur {
+        order: 2;
+    }
+
+    .f-b-c-2 {
+        order: 4;
+    }
+
+    .f-b-c-2blur {
+        order: 3;
+    }
+
+    .f-b-c-3 {
+        order: 5;
+    }
+
+    .f-b-c-3blur {
+        order: 6;
+    }
+
+    .f-banner-card {
+        width: 49%;
+        height: 250px;
+    }
+
+    .invisible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .focus-banner-wrap {
+
+        padding-bottom: 40px;
+
+        &::before {
+            height: 1300px;
+        }
+    }
+
+    .f-card-right {
+        width: 160px;
+        height: 160px;
+    }
+
+    .journey-right {
+        width: 100%;
+    }
+
+    .value-card .value-img {
+        position: static;
+    }
+
+    .value-card-wrap .comm-para {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .value-left .value-img {
+        width: 216px;
+        height: auto;
     }
 }
 
@@ -1136,65 +1498,10 @@
     }
 
     .pool-img {
-        height: 400px;
+        height: 500px;
     }
 
-    .focus-card {
-        border-radius: 20px;
-        padding: 20px;
-    }
 
-    .focus-img {
-        border-radius: 16px;
-    }
-
-    .f-banner-card-wrap {
-        position: static;
-        margin-top: 30px;
-    }
-
-    .f-b-c-1 {
-        order: 1;
-    }
-
-    .f-b-c-1blur {
-        order: 2;
-    }
-
-    .f-b-c-2 {
-        order: 4;
-    }
-
-    .f-b-c-2blur {
-        order: 3;
-    }
-
-    .f-b-c-3 {
-        order: 5;
-    }
-
-    .f-b-c-3blur {
-        order: 6;
-    }
-
-    .f-banner-card {
-        width: 49%;
-        height: 200px;
-    }
-
-    .invisible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .focus-banner-wrap {
-
-        padding-bottom: 40px;
-
-        &::before {
-            height: 1300px;
-        }
-    }
 
     .triangle-1::before,
     .triangle-1::after,
@@ -1232,6 +1539,95 @@
     .triangle-line {
         margin-bottom: -10px;
     }
+
+    .hero-card-1,
+    .hero-card-2,
+    .hero-card-3,
+    .hero-card-4,
+    .hero-card-5,
+    .hero-card-6 {
+        height: 200px;
+    }
+
+    .hero-card {
+        .you-title {
+            padding: 8px 14px;
+            font-size: 14px;
+        }
+    }
+
+    .hero-card-round img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .parent {
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .student-img {
+        height: 300px;
+    }
+
+    .you-bg {
+        width: 100%;
+    }
+
+    .f-card-right {
+        width: 60%;
+        height: 60%;
+    }
+
+    .f-banner-card {
+        height: 210px;
+    }
+
+    .hero-card-round img {
+        top: 15px;
+        left: 15px;
+    }
+
+    .hero-wrap {
+        gap: 0;
+    }
+
+    .value-card {
+        padding: 30px;
+    }
+
+    .page-header {
+        padding-bottom: 50px;
+    }
+
+    .journey-tile {
+        padding-bottom: 30px;
+    }
+
+    .journey-bullet {
+        padding-bottom: 30px;
+    }
+
+    .journey-dot {
+        width: 6px;
+        height: 6px;
+        margin-right: 30px;
+        margin-top: 12px;
+
+        &::after {
+            width: 30px;
+            height: 30px;
+            left: -13px;
+            top: 0px;
+        }
+
+    }
+
+    .journey-bullet.active .journey-dot span {
+        height: calc(100% - 29px);
+        margin-left: 2px;
+        top: 31px;
+    }
 }
 
 @media all and (max-width:400px) {
@@ -1253,6 +1649,27 @@
 
     .f-banner-card {
         height: 150px;
+    }
+
+    .hero-card-1,
+    .hero-card-2,
+    .hero-card-3,
+    .hero-card-4,
+    .hero-card-5,
+    .hero-card-6 {
+        height: 170px;
+    }
+
+    .pool-img {
+        height: 450px;
+    }
+
+    .journey-swiper {
+        width: 90%;
+    }
+
+    .journey-right {
+        height: 370px;
     }
 }
 

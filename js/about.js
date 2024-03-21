@@ -2,13 +2,35 @@ $(document).ready(function () {
 
     // media swiper
     var mediaSwiper = new Swiper(".mediaSwiper", {
-        slidesPerView: 6,
-        spaceBetween: 40,
+        // slidesPerView: 6,
+        // spaceBetween: 40,
         speed: 5000,
         simulateTouch: false,
         loop: true,
         autoplay: {
             delay: 0,
+        },
+        breakpoints: {
+            360: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            400: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            },
+            1200: {
+                slidesPerView: 6,
+                spaceBetween: 40,
+            },
         },
 
     });
@@ -17,6 +39,7 @@ $(document).ready(function () {
     var studentImgSwiper = new Swiper(".studentImgSwiper", {
         slidesPerView: 1,
         speed: 1500,
+        slideShadows: false,
         // simulateTouch: false,
         rotate: 0,
         cardsEffect: {
@@ -56,6 +79,7 @@ $(document).ready(function () {
             },
         }
     });
+
     // journey dynamic height
     $('.journey-content').height($('.journey-content').height() + 50)
 
@@ -111,46 +135,18 @@ $(document).ready(function () {
     // journey slidechange animation
     journeySwiper.on("slideChange", function () {
         var count = journeySwiper.activeIndex;
-
-        // mm.add("(max-width: 834px)", () => {
-        //     let i = labelSwiper.activeIndex;
-        //     accSwiper.slideTo(i);
-        // });
-
         $(".journey-bullet").removeClass("active");
         $(".journey" + count).addClass("active");
-        if (window.matchMedia("(max-width: 640px)").matches) {
-            journeyTextSwiper.slideTo(count);
-        }
     });
 
     // journey wrap dynamic height
-    if (window.matchMedia("(min-width: 641px)").matches) {
+    if (window.matchMedia("(min-width: 1025px)").matches) {
         $('.journey-wrap').css('height', $('.journey-wrap').height() + 100)
     }
 
-    // journey text swiper
-    if (window.matchMedia("(max-width: 640px)").matches) {
-
-        var journeyTextSwiper = new Swiper(".journeyTextSwiper ", {
-            speed: 1000,
-            allowTouchMove: false,
-            spaceBetween: 30,
-            slidesPerView: 1,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-        });
-
-        journeyTextSwiper.on("slideChange", function () {
-            var count = journeySwiper.activeIndex;
-            journeySwiper.slideTo(count);
-        })
-
-
-    }
-
-    var journeyPaddingLeft = window.innerWidth - $('.container').outerWidth();
+    //journey sec padding
+    var journeyPaddingLeft = window.innerWidth - $('.container').outerWidth() + 30;
     $('.journey-sec').css('padding-left', journeyPaddingLeft / 2);
+
+
 })

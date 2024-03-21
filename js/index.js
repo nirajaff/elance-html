@@ -13,15 +13,53 @@ $(document).ready(function () {
         fixedContentPos: false
     });
 
+    // trust swiper
+    var trustSwiper = new Swiper(".trustSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        simulateTouch: false,
+        loop: true,
+        breakpoints: {
+            360: {
+                spaceBetween: 20,
+            },
+
+            1024: {
+                speed: 5000,
+                autoplay: {
+                    delay: 0,
+                },
+            },
+        },
+    });
+
     // you swiper
     var youSwiper = new Swiper(".youSwiper", {
-        slidesPerView: 2.3,
+        // slidesPerView: 2.3,
         grabCursor: true,
         simulateTouch: false,
-        spaceBetween: 50,
+        // spaceBetween: 50,
         navigation: {
             nextEl: ".youSwiper .swiper-next-button",
             prevEl: ".youSwiper .swiper-prev-button",
+        },
+        breakpoints: {
+            360: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+            },
+            480: {
+                slidesPerView: 1.8,
+            },
+
+            640: {
+                slidesPerView: 2.3,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 2.3,
+                spaceBetween: 50,
+            },
         },
     });
 
@@ -37,7 +75,7 @@ $(document).ready(function () {
         },
         breakpoints: {
             360: {
-                slidesPerView: 2.6,
+                slidesPerView: 3,
                 spaceBetween: 40,
             },
             400: {
@@ -64,7 +102,8 @@ $(document).ready(function () {
     var studentImgSwiper = new Swiper(".studentImgSwiper", {
         slidesPerView: 1,
         speed: 1500,
-        // simulateTouch: false,
+        slideShadows: false,
+        simulateTouch: false,
         rotate: 0,
         cardsEffect: {
             perSlideRotate: "0",
@@ -317,7 +356,6 @@ $(document).ready(function () {
             }
 
             function fifthAnim() {
-                console.log('hi');
                 heroScrollTl
                     .to(
                         ".blue-gradient",
@@ -344,20 +382,33 @@ $(document).ready(function () {
         })
     })
 
+
+    function techSlideEnter() {
+        // console.log(i + ' enter');
+    }
+
+    function techSlideEnterBack() {
+        // console.log(i + ' enterback');
+    }
+
+    // focus card stack
+    var cardStackGap = 30
+    if (window.matchMedia("(max-width: 1366px)").matches) {
+        cardStackGap = 10
+    }
+    var fCards = document.querySelectorAll('.focus-card')
+    fCards.forEach((e, i) => {
+        $('.focus-card-' + (i + 1)).css('top', 100 + ((i + 1) * 20))
+    })
+
+    // $('.pool-box').mousemove(function () {
+    //     console.log('yes');
+    // })
+
+
+
+
+
 });
 
 
-
-function techSlideEnter() {
-    // console.log(i + ' enter');
-}
-
-function techSlideEnterBack() {
-    // console.log(i + ' enterback');
-}
-
-// focus card stack
-var fCards = document.querySelectorAll('.focus-card')
-fCards.forEach((e, i) => {
-    $('.focus-card-' + (i + 1)).css('top', 100 + ((i + 1) * 30))
-})

@@ -108,6 +108,11 @@
                                 </div>
                             </div>
                             <div class="img-box">
+                                <div class="mob-triangle">
+                                    <div class="triangle-wrap">
+                                        <div class="triangle-1"></div>
+                                    </div>
+                                </div>
                                 <div class="parent">
                                     <div class="hero-card hero-card-1 div1">
                                         <img src="img/h1.jpg" alt="">
@@ -499,7 +504,14 @@
 
                             </div>
                         </div>
-
+                        <div class="swiper-button-wrap">
+                            <div class="swiper-prev-button swiper-button">
+                                <img src="img/swiper-arrow.svg" alt="">
+                            </div>
+                            <div class="swiper-next-button swiper-button">
+                                <img src="img/swiper-arrow.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -687,7 +699,6 @@
     <script src="js/index.js"></script>
     <script>
         // JavaScript function to move the pool-img element as per cursor position
-
         if (window.matchMedia("(min-width: 1025px)").matches) {
             function moveImage(event, box) {
                 const img = box.querySelector('.pool-img');
@@ -700,6 +711,9 @@
                 const moveY = (offsetY - centerY) * 0.8;
                 img.style.transform = `translate(${moveX}px, ${moveY}px) rotate(354deg)`;
             }
+        } else if (window.matchMedia("(max-width: 1024px)").matches) {
+
+            function moveImage(event, box) {}
         }
     </script>
 </body>

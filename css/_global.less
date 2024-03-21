@@ -973,7 +973,8 @@ body {
 }
 
 .student-left {
-  width: 400px;
+  .m-width(400px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1155,6 +1156,7 @@ body {
   height: 542px;
   border-radius: 24px;
   overflow: hidden;
+  .cover();
 }
 
 .focus-card {
@@ -1213,6 +1215,10 @@ body {
 
   .swiper-slide {
     background: #FFF;
+  }
+
+  .swiper-button-wrap {
+    display: none;
   }
 }
 
@@ -1618,6 +1624,7 @@ body {
   position: relative;
   display: flex;
   width: 100%;
+  transform: translateX(20px);
 
   .comm-para {
     display: none;
@@ -1640,7 +1647,7 @@ body {
         height: calc(100% - 48px);
         top: 38px;
         // .anim(4s);
-        transition: all 4s;
+        transition: height 4s;
         animation-timing-function: ease-out;
       }
 
@@ -1693,7 +1700,7 @@ body {
   background: #82929A;
   display: block;
   margin-right: 60px;
-  margin-top: 18px;
+  margin-top: 6px;
   z-index: 5;
   // position: relative;
 
@@ -1719,7 +1726,7 @@ body {
     display: block;
     position: absolute;
     left: -19px;
-    top: 0px;
+    top: -12px;
     // transform: translate(-50%, -50%);
   }
 
@@ -1727,8 +1734,8 @@ body {
     height: 0;
     width: 1px;
     position: absolute;
-    margin-left: 6px;
-    margin-top: 10px;
+    margin-left: 5px;
+    margin-top: -2px;
     background: #273D88;
     z-index: 1;
   }
@@ -1861,7 +1868,8 @@ body {
   }
 
   .comm-para {
-    .m-width(460px);
+    max-width: 75%;
+    width: 100%;
   }
 }
 
@@ -2702,4 +2710,12 @@ label {
     border-radius: 100%;
     overflow: hidden;
   }
+}
+
+.mob-triangle {
+  display: none;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: none;
 }
