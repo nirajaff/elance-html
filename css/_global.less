@@ -331,7 +331,7 @@ body {
 .video-wrap {
   width: 100%;
   height: 650px;
-  border-radius: 24px;
+  border-radius: var(--br24);
   overflow: hidden;
   .cover();
 
@@ -402,7 +402,7 @@ body {
 }
 
 .learn-card {
-  border-radius: 24px;
+  border-radius: var(--br24);
   background: rgba(255, 255, 255, 0.90);
   box-shadow: 0px 16px 44px 0px rgba(155, 155, 155, 0.10);
   backdrop-filter: blur(30px);
@@ -494,7 +494,7 @@ body {
 }
 
 .faculty-card {
-  border-radius: 24px;
+  border-radius: var(--br24);
   background: linear-gradient(29deg, #3E78CA 4.75%, #F5F7F9 106.86%);
   padding: 30px 20px 60px 26px;
 
@@ -549,7 +549,7 @@ body {
 }
 
 .process-card {
-  border-radius: 24px;
+  border-radius: var(--br24);
   border: 1px solid #CED8DE;
   padding: 30px 40px 45px 35px;
   height: 100%;
@@ -595,7 +595,7 @@ body {
 }
 
 .feedback-card {
-  border-radius: 24px;
+  border-radius: var(--br24);
   border: 1px solid #C7D5DD;
   padding: 38px 78px 42px 50px;
   margin-bottom: 26px;
@@ -705,7 +705,7 @@ body {
   background-size: cover;
   height: 450px;
   width: 100%;
-  border-radius: 24px;
+  border-radius: var(--br24);
   overflow: hidden;
   .flex();
   flex-direction: column;
@@ -1112,7 +1112,7 @@ body {
 }
 
 .ready-wrap {
-  border-radius: 24px;
+  border-radius: var(--br24);
   background: linear-gradient(253deg, #3E78CA -1.81%, #FFF 131.14%);
   padding: 70px;
   overflow: hidden;
@@ -1147,14 +1147,14 @@ body {
 
 .student-img {
   height: 588px;
-  border-radius: 24px;
+  border-radius: var(--br24);
   overflow: hidden;
 }
 
 .focus-img {
   width: 552px;
   height: 542px;
-  border-radius: 24px;
+  border-radius: var(--br24);
   overflow: hidden;
   .cover();
 }
@@ -1481,7 +1481,7 @@ body {
 
 
 .student-img-swiper {
-  border-radius: 24px;
+  border-radius: var(--br24);
   // overflow: hidden;
 
   .swiper-slide {
@@ -1813,7 +1813,7 @@ body {
   position: relative;
   overflow: hidden;
   background: #FFF;
-  border-radius: 24px;
+  border-radius: var(--br24);
   padding: 32px 65px 32px 32px;
 
   h3 {
@@ -2113,7 +2113,7 @@ body {
 }
 
 .job-card {
-  border-radius: 24px;
+  border-radius: var(--br24);
   background: #FFF;
   padding: 24px;
   overflow: hidden;
@@ -2165,6 +2165,8 @@ body {
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 16px;
+  height: 140px;
+  .cover();
 }
 
 .job-swiper {
@@ -2174,16 +2176,17 @@ body {
 }
 
 .fit-left {
-  .m-width(446px);
+
+  flex: 1;
 }
 
 .fit-right {
-  border-radius: 24px;
+  border-radius: var(--br24);
   background: #FFF;
   overflow: hidden;
-  flex: 1;
+  // flex: 1;
   // height: 360px;
-  width: 100%;
+  width: 58%;
   // .flex();
 
   .form-grp {
@@ -2321,7 +2324,7 @@ body {
 }
 
 .form-right {
-  border-radius: 24px;
+  border-radius: var(--br24);
   background: #FFF;
   padding: 40px;
   width: 410px;
@@ -2521,6 +2524,7 @@ label {
 
   .form-field {
     padding: 0 50px;
+    padding-right: 150px;
   }
 }
 
@@ -2604,7 +2608,7 @@ label {
 .update-card {
   .flex();
   flex-direction: column;
-  border-radius: 24px;
+  border-radius: var(--br24);
   border: 1px solid #A3C6D8;
   padding: 65px;
   gap: 25px;
@@ -2718,4 +2722,20 @@ label {
 
 .swiper-3d .swiper-slide-shadow {
   background: none;
+}
+
+.purpose-value {
+  .value-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.scroll-width {
+  width: 100%;
+  overflow-x: auto;
+
+  ul {
+    width: max-content;
+  }
 }

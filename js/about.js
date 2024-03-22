@@ -51,8 +51,8 @@ $(document).ready(function () {
         grabCursor: true,
         spaceBetween: 300,
         navigation: {
-            nextEl: ".studentContentSwiper .swiper-next-button",
-            prevEl: ".studentContentSwiper .swiper-prev-button",
+            nextEl: ".student-wrap .swiper-next-button",
+            prevEl: ".student-wrap .swiper-prev-button",
         },
     });
 
@@ -63,8 +63,8 @@ $(document).ready(function () {
         spaceBetween: 300,
         // simulateTouch: false,
         navigation: {
-            nextEl: ".student-left .swiper-next-button",
-            prevEl: ".student-left .swiper-prev-button",
+            nextEl: ".student-wrap .swiper-next-button",
+            prevEl: ".student-wrap .swiper-prev-button",
         },
         loop: true,
         autoplay: {

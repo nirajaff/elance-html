@@ -22,6 +22,7 @@
     :root {
         --fs72: 60px;
         --fs60: 46px;
+        --fs36: 30px;
     }
 
     .hero-right {
@@ -153,6 +154,22 @@
 
     .big-sec {
         padding: 40px 0;
+    }
+
+    .form-wrap {
+        gap: 50px;
+    }
+
+    .blog-banner-wrap {
+        height: 500px;
+    }
+
+    .blog-img {
+        height: auto;
+    }
+
+    .update-card h3 {
+        font-size: 40px;
     }
 }
 
@@ -400,11 +417,59 @@
         }
     }
 
+    .director-sec .sec-title {
+        margin-bottom: 60px;
+    }
+
+    .v-r-2 .value-left-card,
+    .v-r-1 .value-right-card {
+        width: 100%;
+    }
+
+    .impact-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .why-wrap {
+
+        .f-col {
+            padding: 0 15px;
+        }
+
+        .f-row {
+            margin-left: -15px;
+            margin-right: -15px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .fit-wrap {
+        gap: 30px;
+    }
+
+    .page-header {
+        padding-bottom: 30px;
+    }
+
+    .form-right {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .form-wrap {
+        flex-direction: column-reverse;
+    }
+
+    .blog-banner-wrap {
+        height: 400px;
+    }
 }
 
 @media all and (max-width:1024px) {
     :root {
         --fs60: 36px;
+        --fs36: 26px;
     }
 
     .hero-right.banner-video {
@@ -477,6 +542,21 @@
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: none;
+    }
+
+    .director-tile {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+    }
+
+    .director-img {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        clip-path: none;
+        transform: none;
+        margin-bottom: 30px;
     }
 
     .pool-row-wrap {
@@ -815,6 +895,37 @@
         top: 35%;
     }
 
+    .value-row {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .value-card {
+        padding: 20px;
+    }
+
+    .fit-wrap {
+        flex-direction: column-reverse;
+    }
+
+    .fit-right {
+        width: 100%;
+    }
+
+    .upload-img {
+        margin: 20px 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .blog-banner-wrap {
+        height: 350px;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -935,12 +1046,76 @@
             width: 100%;
         }
     }
+
+    .director-img {
+        width: 100%;
+    }
+
+    .impact-2 {
+        left: 10%;
+        top: 20%;
+    }
+
+    .impact-6 {
+        right: 10%;
+        top: 20%;
+    }
+
+    .impact-1 {
+        left: 30%;
+        top: 10%;
+    }
+
+    .impact-5 {
+        right: 30%;
+        top: 10%;
+    }
+
+    .impact-3 {
+        left: 10%;
+        top: 70%;
+    }
+
+    .impact-7 {
+        right: 10%;
+        top: 70%;
+    }
+
+    .impact-8 {
+        right: 30%;
+        top: 80%;
+    }
+
+    .impact-4 {
+        left: 30%;
+        top: 80%;
+    }
+
+    .impact-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .impact-video {
+        height: 501px;
+    }
+
+    .why-wrap {
+        .f-row {
+            gap: 20px 0;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 @media all and (max-width:640px) {
     :root {
         --fs60: 36px;
-        --fs36: 30px;
+        --fs36: 28px;
         --fs30: 26px;
     }
 
@@ -1157,11 +1332,97 @@
     .int-sec-title.sec-title {
         margin-bottom: 30px;
     }
+
+    .join-wrap {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+
+
+    .purpose-value {
+        .value-card {
+            padding: 30px;
+
+            .value-img {
+                width: 150px;
+                height: 150px;
+                position: absolute;
+            }
+        }
+
+
+    }
+
+    .impact-video {
+        height: 400px;
+        margin: 50px 0;
+    }
+
+    .why-wrap {
+        .button {
+            padding: 0 20px;
+        }
+
+
+    }
+
+    .join-sec {
+        padding: 60px 0;
+    }
+
+    .tab-nav-wrap li {
+        width: 100px;
+    }
+
+    .blog-banner-wrap {
+        height: 300px;
+    }
+
+    .blog-bnr-content {
+        left: 30px;
+        bottom: 30px;
+
+        h2 {
+            margin-bottom: 6px;
+        }
+    }
+
+    .blog-top-row {
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+
+        .search-wrap {
+            width: 100%;
+        }
+    }
+
+    .pagination-wrap ul {
+        gap: 10px;
+    }
+
+    .update-card {
+        font-size: 24px;
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    .email-wrap {
+        width: 100%;
+    }
+
+    .update-card {
+        padding: 30px;
+    }
 }
 
 @media all and (max-width:576px) {
     :root {
         --fs72: 42px;
+        --br24: 14px;
     }
 
     .hero-title {
@@ -1320,6 +1581,31 @@
     .value-left .value-img {
         width: 216px;
         height: auto;
+    }
+
+    .director-img {
+        height: 450px;
+    }
+
+    .director-tile h3 {
+        margin-bottom: 6px;
+    }
+
+    .job-img {
+        border-radius: 8px;
+    }
+
+    .blog-banner-wrap {
+        height: 250px;
+    }
+
+    .blog-bnr-content {
+        left: 20px;
+        bottom: 20px;
+
+        h2 {
+            font-size: 24px;
+        }
     }
 }
 
@@ -1627,6 +1913,98 @@
         height: calc(100% - 29px);
         margin-left: 2px;
         top: 31px;
+    }
+
+    .purpose-value {
+
+        .value-card {
+            padding: 20px;
+
+            .value-img {
+                position: static;
+            }
+        }
+
+        .value-row .comm-para {
+            width: 100%;
+        }
+    }
+
+    // .impact-2 {
+    //     left: 5%;
+    //     top: 30%;
+    // }
+
+    // .impact-6 {
+    //     right: 5%;
+    //     top: 30%;
+    // }
+
+
+
+    .impact-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .join-sec {
+        .value-card {
+            padding: 20px;
+        }
+    }
+
+    .job-card {
+        padding: 14px;
+    }
+
+    .form-right {
+        padding: 20px;
+    }
+
+    .blog-bnr-content h2 {
+        font-size: 20px;
+    }
+
+    .update-card {
+        span {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .update-card {
+        padding: 20px;
+    }
+
+    .search-wrap {
+        .form-field {
+            padding: 0 30px;
+            padding-right: 130px;
+        }
+
+
+        img {
+            width: 14px;
+            height: 14px;
+            left: 10px;
+        }
+
+        .button {
+            height: 45px;
+            font-size: 14px;
+            padding: 0 14px;
+        }
+
+
+    }
+
+    .email-wrap {
+        ::placeholder {
+            font-size: 12px;
+        }
     }
 }
 
