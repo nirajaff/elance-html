@@ -39,6 +39,7 @@ $(document).ready(function () {
         grabCursor: true,
         simulateTouch: false,
         // spaceBetween: 50,
+        speed: 800,
         navigation: {
             nextEl: ".youSwiper .swiper-next-button",
             prevEl: ".youSwiper .swiper-prev-button",
@@ -101,7 +102,7 @@ $(document).ready(function () {
     // studentImgSwiper swiper
     var studentImgSwiper = new Swiper(".studentImgSwiper", {
         slidesPerView: 1,
-        speed: 1500,
+        speed: 800,
         slideShadows: false,
         simulateTouch: false,
         rotate: 0,
@@ -114,20 +115,20 @@ $(document).ready(function () {
         grabCursor: true,
         spaceBetween: 300,
         navigation: {
-            nextEl: ".studentContentSwiper .swiper-next-button",
-            prevEl: ".studentContentSwiper .swiper-prev-button",
+            nextEl: ".student-wrap .swiper-next-button",
+            prevEl: ".student-wrap .swiper-prev-button",
         },
     });
 
     // studentContentSwiper swiper
     var studentContentSwiper = new Swiper(".studentContentSwiper", {
         slidesPerView: 1,
-        speed: 1500,
+        speed: 800,
         spaceBetween: 300,
         // simulateTouch: false,
         navigation: {
-            nextEl: ".student-left .swiper-next-button",
-            prevEl: ".student-left .swiper-prev-button",
+            nextEl: ".student-wrap .swiper-next-button",
+            prevEl: ".student-wrap .swiper-prev-button",
         },
         loop: true,
         autoplay: {
