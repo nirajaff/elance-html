@@ -464,6 +464,19 @@
     .blog-banner-wrap {
         height: 400px;
     }
+
+    .two-card-wrap {
+        width: 100%;
+    }
+
+    .media-img {
+        width: 450px;
+        height: 300px;
+    }
+
+    .media-card {
+        padding: 20px;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -738,6 +751,33 @@
     .value-right .comm-para {
         max-width: 60%;
     }
+
+    .content-body {
+        width: 100%;
+
+        p,
+        strong {
+            padding: 0;
+        }
+
+        span {
+            padding: 0;
+        }
+    }
+
+    .you-swiper {
+
+        .swiper-button-wrap {
+            position: static;
+            transform: none;
+            margin: 50px auto 0;
+            width: 40%;
+        }
+    }
+
+    .job-card {
+        padding: 18px;
+    }
 }
 
 @media all and (max-width:990px) {
@@ -926,6 +966,31 @@
     .blog-banner-wrap {
         height: 350px;
     }
+
+    .student-right,
+    .job-swiper {
+        .swiper-button-wrap {
+            position: static;
+            transform: none;
+            margin: 50px auto 0;
+            width: 40%;
+        }
+    }
+
+    .job-swiper {
+        .swiper-button-wrap {
+            margin: 30px auto 30px;
+        }
+    }
+
+    .media-img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .media-card {
+        gap: 30px;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -1108,6 +1173,24 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+
+    .two-card-wrap {
+        .job-card {
+            display: flex;
+            gap: 30px;
+        }
+
+        .job-content {
+            flex: 1;
+            .flex();
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .job-img {
+            width: 50%;
         }
     }
 }
@@ -1416,6 +1499,31 @@
 
     .update-card {
         padding: 30px;
+    }
+
+    .content-body img {
+        height: 400px;
+    }
+
+    .media-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .media-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .two-card-wrap {
+        .job-card {
+            flex-direction: column;
+        }
+
+        .job-img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
@@ -2005,6 +2113,14 @@
         ::placeholder {
             font-size: 12px;
         }
+    }
+
+    .tab-nav-wrap ul {
+        gap: 10px;
+    }
+
+    .content-body img {
+        height: 300px;
     }
 }
 
