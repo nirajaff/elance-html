@@ -9135,196 +9135,200 @@ label {
   .map-frame {
     height: 400px;
   }
+  /* line 1553, _responsive.less */
+  .impact-sec::after {
+    height: 400px;
+  }
 }
 @media all and (max-width: 576px) {
-  /* line 1553, _responsive.less */
+  /* line 1560, _responsive.less */
   :root {
     --fs72: 42px;
     --br24: 14px;
   }
-  /* line 1558, _responsive.less */
+  /* line 1565, _responsive.less */
   .hero-title {
     max-width: 318px;
   }
-  /* line 1562, _responsive.less */
+  /* line 1569, _responsive.less */
   .blue-bar p {
     display: flex;
     flex-direction: column;
   }
-  /* line 1567, _responsive.less */
+  /* line 1574, _responsive.less */
   .footer-card-wrap {
     height: 250px;
   }
-  /* line 1570, _responsive.less */
+  /* line 1577, _responsive.less */
   .footer-card-wrap h2 {
     font-size: 32px;
   }
-  /* line 1575, _responsive.less */
+  /* line 1582, _responsive.less */
   .accordion {
     padding-left: 60px;
   }
-  /* line 1578, _responsive.less */
+  /* line 1585, _responsive.less */
   .accordion .circle {
     left: 5px;
     width: 40px;
     height: 40px;
   }
-  /* line 1585, _responsive.less */
+  /* line 1592, _responsive.less */
   .panel p {
     padding: 0 20px 48px 60px;
   }
-  /* line 1589, _responsive.less */
+  /* line 1596, _responsive.less */
   .process-card {
     padding: 30px 20px;
   }
-  /* line 1593, _responsive.less */
+  /* line 1600, _responsive.less */
   .hero-title {
     max-width: 360px;
   }
-  /* line 1597, _responsive.less */
+  /* line 1604, _responsive.less */
   .trust-swiper {
     width: 460px;
     margin-left: unset;
     margin-right: unset;
   }
-  /* line 1603, _responsive.less */
+  /* line 1610, _responsive.less */
   .ready-img {
     width: 210px;
   }
-  /* line 1608, _responsive.less */
+  /* line 1615, _responsive.less */
   .ready-wrap .sec-title {
     font-size: 24px;
     margin-bottom: 10px;
   }
-  /* line 1613, _responsive.less */
+  /* line 1620, _responsive.less */
   .ready-wrap .comm-para {
     margin-bottom: 10px;
   }
-  /* line 1618, _responsive.less */
+  /* line 1625, _responsive.less */
   .focus-banner-wrap h2 {
     max-width: 100%;
   }
-  /* line 1622, _responsive.less */
+  /* line 1629, _responsive.less */
   .f-banner-card-wrap {
     justify-content: space-between;
     gap: 10px 0;
   }
-  /* line 1627, _responsive.less */
+  /* line 1634, _responsive.less */
   .f-banner-card {
     width: 120px;
     height: 120px;
   }
-  /* line 1632, _responsive.less */
+  /* line 1639, _responsive.less */
   .focus-banner-wrap h2 {
     font-size: 32px;
   }
-  /* line 1636, _responsive.less */
+  /* line 1643, _responsive.less */
   .focus-card {
     border-radius: 20px;
     padding: 20px;
   }
-  /* line 1641, _responsive.less */
+  /* line 1648, _responsive.less */
   .focus-img {
     border-radius: 16px;
   }
-  /* line 1645, _responsive.less */
+  /* line 1652, _responsive.less */
   .f-banner-card-wrap {
     position: static;
     margin-top: 30px;
   }
-  /* line 1650, _responsive.less */
+  /* line 1657, _responsive.less */
   .f-b-c-1 {
     order: 1;
   }
-  /* line 1654, _responsive.less */
+  /* line 1661, _responsive.less */
   .f-b-c-1blur {
     order: 2;
   }
-  /* line 1658, _responsive.less */
+  /* line 1665, _responsive.less */
   .f-b-c-2 {
     order: 4;
   }
-  /* line 1662, _responsive.less */
+  /* line 1669, _responsive.less */
   .f-b-c-2blur {
     order: 3;
   }
-  /* line 1666, _responsive.less */
+  /* line 1673, _responsive.less */
   .f-b-c-3 {
     order: 5;
   }
-  /* line 1670, _responsive.less */
+  /* line 1677, _responsive.less */
   .f-b-c-3blur {
     order: 6;
   }
-  /* line 1674, _responsive.less */
+  /* line 1681, _responsive.less */
   .f-banner-card {
     width: 49%;
     height: 250px;
   }
-  /* line 1679, _responsive.less */
+  /* line 1686, _responsive.less */
   .invisible {
     opacity: 1;
     visibility: visible;
   }
-  /* line 1684, _responsive.less */
+  /* line 1691, _responsive.less */
   .focus-banner-wrap {
     padding-bottom: 40px;
   }
-  /* line 1688, _responsive.less */
+  /* line 1695, _responsive.less */
   .focus-banner-wrap::before {
     height: 1300px;
   }
-  /* line 1693, _responsive.less */
+  /* line 1700, _responsive.less */
   .f-card-right {
     width: 160px;
     height: 160px;
   }
-  /* line 1698, _responsive.less */
+  /* line 1705, _responsive.less */
   .journey-right {
     width: 100%;
   }
-  /* line 1702, _responsive.less */
+  /* line 1709, _responsive.less */
   .value-card .value-img {
     position: static;
   }
-  /* line 1706, _responsive.less */
+  /* line 1713, _responsive.less */
   .value-card-wrap .comm-para {
     width: 100%;
     max-width: 100%;
   }
-  /* line 1711, _responsive.less */
+  /* line 1718, _responsive.less */
   .value-left .value-img {
     width: 216px;
     height: auto;
   }
-  /* line 1716, _responsive.less */
+  /* line 1723, _responsive.less */
   .director-img {
     height: 450px;
   }
-  /* line 1720, _responsive.less */
+  /* line 1727, _responsive.less */
   .director-tile h3 {
     margin-bottom: 6px;
   }
-  /* line 1724, _responsive.less */
+  /* line 1731, _responsive.less */
   .job-img {
     border-radius: 8px;
   }
-  /* line 1728, _responsive.less */
+  /* line 1735, _responsive.less */
   .blog-banner-wrap {
     height: 250px;
   }
-  /* line 1732, _responsive.less */
+  /* line 1739, _responsive.less */
   .blog-bnr-content {
     left: 20px;
     bottom: 20px;
   }
-  /* line 1736, _responsive.less */
+  /* line 1743, _responsive.less */
   .blog-bnr-content h2 {
     font-size: 24px;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 1743, _responsive.less */
+  /* line 1750, _responsive.less */
   :root {
     --fs72: 36px;
     --fs60: 32px;
@@ -9332,167 +9336,167 @@ label {
     --fs30: 24px;
     --fs20: 18px;
   }
-  /* line 1751, _responsive.less */
+  /* line 1758, _responsive.less */
   .footer-top {
     justify-content: space-between;
     gap: 40px;
     padding-bottom: 40px;
   }
-  /* line 1757, _responsive.less */
+  /* line 1764, _responsive.less */
   .footer-bottom {
     padding: 20px 0;
     flex-direction: column;
     gap: 24px;
   }
-  /* line 1762, _responsive.less */
+  /* line 1769, _responsive.less */
   .footer-bottom ul {
     width: 100%;
     justify-content: center;
   }
-  /* line 1768, _responsive.less */
+  /* line 1775, _responsive.less */
   .blue-bar p {
     font-size: 14px;
   }
-  /* line 1772, _responsive.less */
+  /* line 1779, _responsive.less */
   .faculty-top {
     flex-direction: column;
     border-bottom: none;
     gap: 40px;
   }
-  /* line 1778, _responsive.less */
+  /* line 1785, _responsive.less */
   .faculty-title {
     margin-bottom: 40px;
   }
-  /* line 1782, _responsive.less */
+  /* line 1789, _responsive.less */
   .faculty-card {
     padding: 40px 20px;
   }
-  /* line 1786, _responsive.less */
+  /* line 1793, _responsive.less */
   .faculty-img {
     border-bottom: 1px solid #FFF;
     width: 100%;
   }
-  /* line 1792, _responsive.less */
+  /* line 1799, _responsive.less */
   .expert-wrap .f-row {
     gap: 30px 0;
   }
-  /* line 1797, _responsive.less */
+  /* line 1804, _responsive.less */
   .feedback-card {
     padding: 30px 20px;
   }
-  /* line 1801, _responsive.less */
+  /* line 1808, _responsive.less */
   .feedback-img {
     width: 45px;
     height: 45px;
   }
-  /* line 1806, _responsive.less */
+  /* line 1813, _responsive.less */
   .footer-top {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: flex-start;
   }
-  /* line 1811, _responsive.less */
+  /* line 1818, _responsive.less */
   .footer-top .logo {
     order: 1;
   }
-  /* line 1815, _responsive.less */
+  /* line 1822, _responsive.less */
   .footer-top .footer-social {
     order: 3;
   }
-  /* line 1819, _responsive.less */
+  /* line 1826, _responsive.less */
   .footer-top .f-row {
     order: 2;
     width: 100%;
   }
-  /* line 1824, _responsive.less */
+  /* line 1831, _responsive.less */
   .footer-top ul {
     margin-bottom: 40px;
   }
-  /* line 1831, _responsive.less */
+  /* line 1838, _responsive.less */
   .footer-top .f-col:last-child ul {
     margin-bottom: 0;
   }
-  /* line 1837, _responsive.less */
+  /* line 1844, _responsive.less */
   .footer-wrap {
     padding-bottom: 40px;
   }
-  /* line 1841, _responsive.less */
+  /* line 1848, _responsive.less */
   .media-wrap h2 {
     font-size: 20px;
   }
-  /* line 1846, _responsive.less */
+  /* line 1853, _responsive.less */
   .dream-wrap .f-row {
     gap: 8px 0;
     margin-right: -4px;
     margin-left: -4px;
   }
-  /* line 1852, _responsive.less */
+  /* line 1859, _responsive.less */
   .dream-wrap .f-col {
     padding: 0 8px;
   }
-  /* line 1857, _responsive.less */
+  /* line 1864, _responsive.less */
   .trust-swiper {
     width: 400px;
   }
-  /* line 1861, _responsive.less */
+  /* line 1868, _responsive.less */
   .hero-title {
     max-width: 310px;
     font-size: 42px;
   }
-  /* line 1866, _responsive.less */
+  /* line 1873, _responsive.less */
   .button {
     height: 40px;
   }
-  /* line 1871, _responsive.less */
+  /* line 1878, _responsive.less */
   .fixed-wrap .button {
     width: 100%;
   }
-  /* line 1876, _responsive.less */
+  /* line 1883, _responsive.less */
   .trust-img-wrap {
     gap: 24px;
   }
-  /* line 1880, _responsive.less */
+  /* line 1887, _responsive.less */
   .ready-img {
     position: relative;
     left: -20px;
     top: -20px;
     width: 300px;
   }
-  /* line 1887, _responsive.less */
+  /* line 1894, _responsive.less */
   .ready-wrap {
     padding-bottom: 30px;
   }
-  /* line 1890, _responsive.less */
+  /* line 1897, _responsive.less */
   .ready-wrap .f-col:first-child {
     display: none;
   }
-  /* line 1895, _responsive.less */
+  /* line 1902, _responsive.less */
   .career-img {
     width: 100%;
   }
-  /* line 1899, _responsive.less */
+  /* line 1906, _responsive.less */
   .career-content {
     left: 20px;
     padding-right: 20px;
   }
-  /* line 1903, _responsive.less */
+  /* line 1910, _responsive.less */
   .career-content .comm-para {
     margin-bottom: 10px;
   }
-  /* line 1906, _responsive.less */
+  /* line 1913, _responsive.less */
   .career-content .comm-para p {
     line-height: 1.4;
   }
-  /* line 1912, _responsive.less */
+  /* line 1919, _responsive.less */
   .pool-box {
     width: 100%;
     border-bottom: 1px solid #A3C6D8;
   }
-  /* line 1917, _responsive.less */
+  /* line 1924, _responsive.less */
   .pool-img {
     height: 500px;
   }
-  /* line 1923, _responsive.less */
+  /* line 1930, _responsive.less */
   .triangle-1::before,
   .triangle-1::after,
   .triangle-wrap,
@@ -9500,33 +9504,33 @@ label {
     width: 60px;
     height: 60px;
   }
-  /* line 1931, _responsive.less */
+  /* line 1938, _responsive.less */
   .hero-triangle {
     transform: translate(0px, 10px);
   }
-  /* line 1935, _responsive.less */
+  /* line 1942, _responsive.less */
   .triangle-line {
     gap: 5px;
   }
-  /* line 1939, _responsive.less */
+  /* line 1946, _responsive.less */
   .triangle-1::before,
   .triangle-1::after {
     background: linear-gradient(8deg, #3e78ca 19.32%, #ffffff 83.98%);
   }
-  /* line 1946, _responsive.less */
+  /* line 1953, _responsive.less */
   .hero-content .comm-para {
     margin-bottom: 30px;
     margin-top: 20px;
   }
-  /* line 1951, _responsive.less */
+  /* line 1958, _responsive.less */
   .hero-content .button {
     margin-bottom: 40px;
   }
-  /* line 1956, _responsive.less */
+  /* line 1963, _responsive.less */
   .triangle-line {
     margin-bottom: -10px;
   }
-  /* line 1960, _responsive.less */
+  /* line 1967, _responsive.less */
   .hero-card-1,
   .hero-card-2,
   .hero-card-3,
@@ -9535,198 +9539,202 @@ label {
   .hero-card-6 {
     height: 200px;
   }
-  /* line 1970, _responsive.less */
+  /* line 1977, _responsive.less */
   .hero-card .you-title {
     padding: 8px 14px;
     font-size: 14px;
   }
-  /* line 1976, _responsive.less */
+  /* line 1983, _responsive.less */
   .hero-card-round img {
     width: 58px;
     height: 58px;
   }
-  /* line 1981, _responsive.less */
+  /* line 1988, _responsive.less */
   .parent {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
   }
-  /* line 1986, _responsive.less */
+  /* line 1993, _responsive.less */
   .student-img {
     height: 300px;
   }
-  /* line 1990, _responsive.less */
+  /* line 1997, _responsive.less */
   .you-bg {
     width: 100%;
   }
-  /* line 1994, _responsive.less */
+  /* line 2001, _responsive.less */
   .f-card-right {
     width: 60%;
     height: 60%;
   }
-  /* line 1999, _responsive.less */
+  /* line 2006, _responsive.less */
   .f-banner-card {
     height: 210px;
   }
-  /* line 2003, _responsive.less */
+  /* line 2010, _responsive.less */
   .hero-card-round img {
     top: 15px;
     left: 15px;
   }
-  /* line 2008, _responsive.less */
+  /* line 2015, _responsive.less */
   .hero-wrap {
     gap: 0;
   }
-  /* line 2012, _responsive.less */
+  /* line 2019, _responsive.less */
   .value-card {
     padding: 30px;
   }
-  /* line 2016, _responsive.less */
+  /* line 2023, _responsive.less */
   .page-header {
     padding-bottom: 50px;
   }
-  /* line 2020, _responsive.less */
+  /* line 2027, _responsive.less */
   .journey-tile {
     padding-bottom: 30px;
   }
-  /* line 2024, _responsive.less */
+  /* line 2031, _responsive.less */
   .journey-bullet {
     padding-bottom: 30px;
   }
-  /* line 2028, _responsive.less */
+  /* line 2035, _responsive.less */
   .journey-dot {
     width: 6px;
     height: 6px;
     margin-right: 30px;
     margin-top: 12px;
   }
-  /* line 2034, _responsive.less */
+  /* line 2041, _responsive.less */
   .journey-dot::after {
     width: 30px;
     height: 30px;
     left: -13px;
     top: 0px;
   }
-  /* line 2043, _responsive.less */
+  /* line 2050, _responsive.less */
   .journey-bullet.active .journey-dot span {
     height: calc(100% - 29px);
     margin-left: 2px;
     top: 31px;
   }
-  /* line 2051, _responsive.less */
+  /* line 2058, _responsive.less */
   .purpose-value .value-card {
     padding: 20px;
   }
-  /* line 2054, _responsive.less */
+  /* line 2061, _responsive.less */
   .purpose-value .value-card .value-img {
     position: static;
   }
-  /* line 2059, _responsive.less */
+  /* line 2066, _responsive.less */
   .purpose-value .value-row .comm-para {
     width: 100%;
   }
-  /* line 2076, _responsive.less */
+  /* line 2083, _responsive.less */
   .impact-img {
     width: 50px;
     height: 50px;
   }
-  /* line 2082, _responsive.less */
+  /* line 2089, _responsive.less */
   .join-sec .value-card {
     padding: 20px;
   }
-  /* line 2087, _responsive.less */
+  /* line 2094, _responsive.less */
   .job-card {
     padding: 14px;
   }
-  /* line 2091, _responsive.less */
+  /* line 2098, _responsive.less */
   .form-right {
     padding: 20px;
   }
-  /* line 2095, _responsive.less */
+  /* line 2102, _responsive.less */
   .blog-bnr-content h2 {
     font-size: 20px;
   }
-  /* line 2100, _responsive.less */
+  /* line 2107, _responsive.less */
   .update-card span {
     font-size: 20px;
   }
-  /* line 2104, _responsive.less */
+  /* line 2111, _responsive.less */
   .update-card h3 {
     font-size: 24px;
   }
-  /* line 2109, _responsive.less */
+  /* line 2116, _responsive.less */
   .update-card {
     padding: 20px;
   }
-  /* line 2114, _responsive.less */
+  /* line 2121, _responsive.less */
   .search-wrap .form-field {
     padding: 0 30px;
     padding-right: 130px;
   }
-  /* line 2120, _responsive.less */
+  /* line 2127, _responsive.less */
   .search-wrap img {
     width: 14px;
     height: 14px;
     left: 10px;
   }
-  /* line 2126, _responsive.less */
+  /* line 2133, _responsive.less */
   .search-wrap .button {
     height: 45px;
     font-size: 14px;
     padding: 0 14px;
   }
-  /* line 2136, _responsive.less */
+  /* line 2143, _responsive.less */
   .email-wrap ::placeholder {
     font-size: 12px;
   }
-  /* line 2141, _responsive.less */
+  /* line 2148, _responsive.less */
   .tab-nav-wrap ul {
     gap: 10px;
   }
-  /* line 2145, _responsive.less */
+  /* line 2152, _responsive.less */
   .content-body img {
     height: 300px;
   }
-  /* line 2149, _responsive.less */
+  /* line 2156, _responsive.less */
   .contact-form-wrap form {
     padding: 20px;
   }
-  /* line 2153, _responsive.less */
+  /* line 2160, _responsive.less */
   .contact-left h5 {
     font-size: 30px;
   }
-  /* line 2157, _responsive.less */
+  /* line 2164, _responsive.less */
   .map-frame {
     height: 300px;
     margin-bottom: 20px;
   }
-  /* line 2162, _responsive.less */
+  /* line 2169, _responsive.less */
   .contact-img {
     width: 26px;
     height: 26px;
   }
+  /* line 2174, _responsive.less */
+  .impact-video video {
+    object-fit: contain;
+  }
 }
 @media all and (max-width: 400px) {
-  /* line 2169, _responsive.less */
+  /* line 2181, _responsive.less */
   .footer-card-wrap {
     height: 200px;
   }
-  /* line 2172, _responsive.less */
+  /* line 2184, _responsive.less */
   .footer-card-wrap h2 {
     font-size: 24px;
   }
-  /* line 2177, _responsive.less */
+  /* line 2189, _responsive.less */
   .dream-logo {
     padding: 10px 40px;
   }
-  /* line 2181, _responsive.less */
+  /* line 2193, _responsive.less */
   .trust-swiper {
     width: 320px;
   }
-  /* line 2185, _responsive.less */
+  /* line 2197, _responsive.less */
   .f-banner-card {
     height: 150px;
   }
-  /* line 2189, _responsive.less */
+  /* line 2201, _responsive.less */
   .hero-card-1,
   .hero-card-2,
   .hero-card-3,
@@ -9735,15 +9743,15 @@ label {
   .hero-card-6 {
     height: 170px;
   }
-  /* line 2198, _responsive.less */
+  /* line 2210, _responsive.less */
   .pool-img {
     height: 350px;
   }
-  /* line 2202, _responsive.less */
+  /* line 2214, _responsive.less */
   .journey-swiper {
     width: 90%;
   }
-  /* line 2206, _responsive.less */
+  /* line 2218, _responsive.less */
   .journey-right {
     height: 370px;
   }
