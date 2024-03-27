@@ -1,6 +1,16 @@
 $(document).ready(function () {
 
-
+    // disbale scroll onload for 2 sec
+    $('html, body').css({
+        'overflow': 'hidden',
+        'height': '100%'
+    });
+    setTimeout(function () {
+        $('html, body').css({
+            'overflow': 'unset',
+            'height': 'unset'
+        });
+    }, 2000);
 
     // magnific popup
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
@@ -39,7 +49,7 @@ $(document).ready(function () {
         grabCursor: true,
         simulateTouch: false,
         // spaceBetween: 50,
-        speed: 800,
+        speed: 1500,
         navigation: {
             nextEl: ".youSwiper .swiper-next-button",
             prevEl: ".youSwiper .swiper-prev-button",
@@ -148,8 +158,9 @@ $(document).ready(function () {
     gsap.registerPlugin(ScrollTrigger);
     let mm = gsap.matchMedia();
 
-
+    // banner animation
     mm.add("(min-width: 1025px)", () => {
+
         function onloadAnim() {
             gsap.to(
                 ".hero-content", {
@@ -186,6 +197,7 @@ $(document).ready(function () {
                     y: -800,
                     x: 50,
                     duration: 2,
+
                 },
                 1)
             gsap.from(
@@ -240,12 +252,12 @@ $(document).ready(function () {
                 2)
         }
 
-        onloadAnim()           //onload gsap banner animation
+        onloadAnim();           //onload gsap banner animation
 
         const heroTriggers = document.querySelectorAll(".hero-trigg");
         heroTriggers.forEach((section, i) => {
 
-            // her section pinning
+            // hero section pinning
             var headHeight = $('.header-box').outerHeight()
             var heroPinTl = gsap
                 .timeline({
@@ -274,9 +286,6 @@ $(document).ready(function () {
                         scrub: true,
                         start: `100% 90%`,
                         end: "100% 10%",
-                        // toggleActions: "play none none reverse",
-                        onEnter: () => techSlideEnter(),
-                        // onEnterBack: () => techSlideEnterBack(),
                         // markers: true,
                         id: 'hero-scroll'
                     },
@@ -356,6 +365,7 @@ $(document).ready(function () {
                         0)
             }
 
+
             function fifthAnim() {
                 heroScrollTl
                     .to(
@@ -383,15 +393,6 @@ $(document).ready(function () {
         })
     })
 
-
-    function techSlideEnter() {
-        // console.log(i + ' enter');
-    }
-
-    function techSlideEnterBack() {
-        // console.log(i + ' enterback');
-    }
-
     // focus card stack
     var cardStackGap = 30
     if (window.matchMedia("(max-width: 1366px)").matches) {
@@ -401,14 +402,6 @@ $(document).ready(function () {
     fCards.forEach((e, i) => {
         $('.focus-card-' + (i + 1)).css('top', 100 + ((i + 1) * 20))
     })
-
-    // $('.pool-box').mousemove(function () {
-    //     console.log('yes');
-    // })
-
-
-
-
 
 });
 

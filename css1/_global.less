@@ -99,7 +99,7 @@ body {
 }
 
 .ov-hidden {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .invisible {
@@ -1624,6 +1624,7 @@ body {
 .journey-title {
   color: var(--black);
   font-size: var(--fs30);
+  ;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: -0.9px;
@@ -1638,6 +1639,11 @@ body {
 
   .comm-para {
     display: none;
+  }
+
+  &:last-child {
+    // padding-bottom: 50px;
+    // padding-top: 50px;
   }
 
   &.active {
@@ -1752,6 +1758,10 @@ body {
 
   .swiper-wrapper {
     display: block;
+  }
+
+  .comm-para p:last-child {
+    // margin-bottom: 48px;
   }
 
   .swiper-slide {
@@ -1895,7 +1905,7 @@ body {
 .join-sec {
   background: url('../img/join.jpg') no-repeat center;
   background-size: cover;
-  height: calc(100dvh - var(--header-height));
+  height: calc(100vh - var(--header-height));
   width: 100%;
 }
 
@@ -2387,6 +2397,13 @@ label {
     bottom: 0;
     left: 0;
   }
+}
+
+.impact-img-box {
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
 }
 
 .impact-img {
