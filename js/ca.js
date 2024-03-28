@@ -93,7 +93,7 @@ $(document).ready(function () {
             ease: "linear",
         }, 0).to('.play-btn', {
             y: () =>
-                $(".video-wrap").offset().top - $(".banner-video").offset().top / 2,
+                $(".video-wrap").offset().top - $(".banner-video").offset().top + 50,
             x: () =>
                 ($(".video-wrap").offset().left - $(".banner-video").offset().left) / 2,
             // scale: 0.5

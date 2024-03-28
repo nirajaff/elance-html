@@ -1,16 +1,18 @@
 $(document).ready(function () {
 
     // disbale scroll onload for 2 sec
-    $('html, body').css({
-        'overflow': 'hidden',
-        'height': '100%'
-    });
-    setTimeout(function () {
+    if (window.matchMedia("(min-width: 1025px)").matches) {
         $('html, body').css({
-            'overflow': 'unset',
-            'height': 'unset'
+            'overflow': 'hidden',
+            'height': '100%'
         });
-    }, 2000);
+        setTimeout(function () {
+            $('html, body').css({
+                'overflow': 'unset',
+                'height': 'unset'
+            });
+        }, 2000);
+    }
 
     // magnific popup
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({

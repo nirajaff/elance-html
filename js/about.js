@@ -107,7 +107,7 @@ $(document).ready(function () {
 
     // journey swiper
     var journeySwiper = new Swiper(".journeySwiper", {
-        speed: 1000,
+        // speed: 1500,
         effect: "fade",
         // allowTouchMove: false,
         fadeEffect: {
@@ -137,11 +137,47 @@ $(document).ready(function () {
         var count = journeySwiper.activeIndex;
         $(".journey-bullet").removeClass("active");
         $(".journey" + count).addClass("active");
+        if (window.matchMedia("(max-width: 1024px)").matches) {
+            journeyTextSwiper.slideTo(count);
+        }
     });
 
     // journey wrap dynamic height
     if (window.matchMedia("(min-width: 1025px)").matches) {
         $('.journey-wrap').css('height', $('.journey-wrap').height() + 100)
+    }
+
+    // journey text swiper
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+
+        var journeyTextSwiper = new Swiper(".journeyTextSwiper ", {
+            // speed: 1500,
+            allowTouchMove: false,
+            spaceBetween: 100,
+            slidesPerView: 1,
+            effect: "creative",
+            // creativeEffect: {
+            //     prev: {
+            //         shadow: true,
+            //         translate: ["-150%", 0, -100],
+            //     },
+            //     next: {
+            //         shadow: true,
+            //         translate: ["150%", 0, -100],
+            //     },
+            // },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        journeyTextSwiper.on("slideChange", function () {
+            var count = journeySwiper.activeIndex;
+            journeySwiper.slideTo(count);
+        })
+
+
     }
 
     //journey sec padding
