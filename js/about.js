@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $('.journey-text-swiper').outerHeight($('.journey-text-swiper').outerHeight() + 50);
+
     // media swiper
     var mediaSwiper = new Swiper(".mediaSwiper", {
         // slidesPerView: 6,
