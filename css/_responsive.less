@@ -494,6 +494,10 @@
         width: 300px;
         height: 350px;
     }
+
+    .small-height .page-header {
+        padding-bottom: 30px;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -1287,6 +1291,7 @@
 
         .job-img {
             width: 50%;
+            margin-bottom: 0;
         }
     }
 
@@ -1579,7 +1584,7 @@
 
     .blog-top-row {
         flex-direction: column;
-        gap: 0px;
+        gap: 30px;
         align-items: flex-start;
 
         .search-wrap {
@@ -2210,20 +2215,20 @@
     }
 
     .update-card {
-        padding: 20px;
+        padding: 40px 20px;
     }
 
     .search-wrap {
         .form-field {
-            padding: 0 30px;
+            padding: 0 40px;
             padding-right: 130px;
         }
 
 
         img {
-            width: 14px;
-            height: 14px;
-            left: 10px;
+            width: 18px;
+            height: 18px;
+            left: 14px;
         }
 
         .button {
@@ -2237,7 +2242,7 @@
 
     .email-wrap {
         ::placeholder {
-            font-size: 12px;
+            font-size: 16px;
         }
     }
 
@@ -2279,6 +2284,11 @@
         .sec-title {
             font-size: 26px;
         }
+    }
+
+    .blog-top-row {
+        gap: 20px;
+        margin-bottom: 40px;
     }
 }
 
@@ -2327,6 +2337,28 @@
     .director-img {
         height: 430px;
         width: 100%;
+    }
+
+    .email-wrap {
+        .form-grp {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 0;
+        }
+
+        .form-field {
+            padding-right: 40px;
+        }
+
+
+        .button {
+            position: static;
+        }
+
+        img {
+            top: 22px;
+        }
     }
 }
 

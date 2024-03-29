@@ -158,16 +158,6 @@ $(document).ready(function () {
             spaceBetween: 100,
             slidesPerView: 1,
             effect: "creative",
-            // creativeEffect: {
-            //     prev: {
-            //         shadow: true,
-            //         translate: ["-150%", 0, -100],
-            //     },
-            //     next: {
-            //         shadow: true,
-            //         translate: ["150%", 0, -100],
-            //     },
-            // },
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
